@@ -1,8 +1,10 @@
 import React from 'react';
-import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Newspaper, Instagram, Facebook } from 'lucide-react';
+import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Newspaper, Instagram, Facebook, Menu } from 'lucide-react';
 
 function App() {
   const [selectedService, setSelectedService] = React.useState<number | null>(null);
+  const [activeSection, setActiveSection] = React.useState('home');
+  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
   const services = [
     {
@@ -78,6 +80,11 @@ Giveaway / aktivacije zajednice`,
     },
   ];
 
+  const navigateToSection = (sectionId: string) => {
+    setActiveSection(sectionId);
+    setMobileMenuOpen(false);
+  };
+
   const openModal = (serviceId: number) => {
     setSelectedService(serviceId);
     document.body.style.overflow = 'hidden';
@@ -90,6 +97,257 @@ Giveaway / aktivacije zajednice`,
 
   const selectedServiceData = services.find(service => service.id === selectedService);
 
+  const renderSection = () => {
+    switch (activeSection) {
+      case 'home':
+        return (
+          <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <div className="absolute inset-0 z-0">
+              <img
+                src="andras-vas-Bd7gNnWJBkU-unsplash copy copy copy copy copy.jpg"
+                alt="Marketing team"
+                className="w-full h-full object-cover transform scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900"></div>
+            </div>
+            
+            <div className="absolute bottom-24 left-6 z-20 text-left max-w-2xl">
+              <h1 className="text-6xl md:text-8xl font-extralight mb-6 leading-tight transform perspective-1000 rotateX-5">
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-white to-blue-300">
+                  BrandMatch
+                </span>
+              </h1>
+              <p className="text-xl md:text-2xl font-light mb-8 opacity-90 leading-relaxed ml-0">
+                Kod pretvaramo u uspjeh.
+              </p>
+            </div>
+            
+            <div className="absolute top-1/4 left-10 w-20 h-20 bg-purple-500/20 rounded-full blur-xl animate-pulse"></div>
+            <div className="absolute bottom-1/3 right-10 w-32 h-32 bg-blue-500/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
+          </section>
+        );
+
+      case 'services':
+        return (
+          <section className="py-24 px-6 min-h-screen flex items-center">
+            <div className="max-w-7xl mx-auto w-full">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-extralight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-400">
+                  ŠTO MOŽEMO UČINITI ZA VAS
+                </h2>
+                <p className="text-xl font-light opacity-80 max-w-2xl mx-auto">
+                  Spoj kreativnosti i tehnologije za brendove koji žele ostati zapamćeni
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {services.map((service, index) => (
+                  <div 
+                    key={service.id}
+                    className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 cursor-pointer"
+                    onClick={() => openModal(service.id)}
+                    style={{
+                      animationDelay: `${index * 0.1}s`,
+                      transform: 'perspective(1000px) rotateX(5deg) rotateY(-2deg)'
+                    }}
+                  >
+                    <div className="relative overflow-hidden">
+                      <img 
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                      <div className="absolute top-4 right-4 text-purple-300 opacity-80 group-hover:text-white transition-colors">
+                        {service.icon}
+                      </div>
+                    </div>
+                    
+                    <div className="p-6">
+                      <h3 className="text-xl font-light mb-3 group-hover:text-purple-300 transition-colors">
+                        {service.title}
+                      </h3>
+                      <p className="text-sm opacity-70 font-light leading-relaxed">
+                        {service.description}
+                      </p>
+                    </div>
+                    
+                    <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/0 to-blue-600/0 group-hover:from-purple-600/10 group-hover:to-blue-600/10 transition-all duration-500 pointer-events-none"></div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+
+      case 'about':
+        return (
+          <section className="py-24 px-6 min-h-screen flex items-center bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm">
+            <div className="max-w-4xl mx-auto text-center w-full">
+              <h2 className="text-5xl md:text-6xl font-extralight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
+                O nama
+              </h2>
+              
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12 transform perspective-1000 rotateX-2">
+                <div className="space-y-6">
+                  <div className="flex items-center justify-center space-x-4 mb-8">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
+                    <h3 className="text-2xl font-light">Obrt ADORES.FSH</h3>
+                    <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-500"></div>
+                  </div>
+                  
+                  <p className="text-lg font-light opacity-90 mb-6">
+                    Vlasnica: <span className="text-purple-300">Mia Miškulin</span>
+                  </p>
+                  
+                  <div className="bg-gradient-to-r from-purple-900/60 to-purple-600/40 rounded-xl p-6 mb-6 border border-purple-500/20">
+                    <h4 className="text-lg font-light text-purple-200 mb-4">O vlasnici</h4>
+                    <div className="text-left space-y-3">
+                      <p className="font-light opacity-90 leading-relaxed">
+                        Ja sam Mia Miškulin — MM.Mia. Influencerica, content kreatorica i osnivačica ADORES.FSH. Rođena u Vukovaru, živim u Beču, a svoju zajednicu gradim kroz autentičan sadržaj, marketing i projekte koji donose stvarne rezultate. Pronađi me na društvenim mrežama kao @mm.mia.
+                      </p>
+                      <p className="font-light opacity-90 leading-relaxed">
+                        Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru Marketing & Sales te paralelno razvijala karijeru na YouTubeu i drugim mrežama. 1. srpnja 2023. pokrećem vlastiti obrt ADORES.FSH i svoj brend, a uz marketing kontinuirano usavršavam programiranje kako bih brendovima ponudila cjelovita digitalna rješenja.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <div className="flex items-center space-x-3">
+                      <MapPin className="w-5 h-5 text-purple-400 flex-shrink-0" />
+                      <span className="font-light">Dr. Franje Tuđmana 27A, Ilok, 32236, Hrvatska</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Calendar className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                      <span className="font-light">Osnovan 1. srpnja 2023.</span>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-8 pt-6 border-t border-white/20">
+                    <h4 className="text-xl font-light text-center mb-4 text-purple-300">MM.Mia</h4>
+                    <div className="flex justify-center space-x-6">
+                      <a 
+                        href="https://instagram.com/mm.mia1" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="p-3 bg-white/10 hover:bg-purple-500/20 rounded-full transition-all duration-300 hover:scale-125"
+                      >
+                        <Instagram className="w-6 h-6 text-purple-400 hover:text-white transition-colors" />
+                      </a>
+                      <a 
+                        href="https://www.facebook.com/mm.miablogger" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="p-3 bg-white/10 hover:bg-blue-500/20 rounded-full transition-all duration-300 hover:scale-125"
+                      >
+                        <Facebook className="w-6 h-6 text-blue-400 hover:text-white transition-colors" />
+                      </a>
+                      <a 
+                        href="https://www.tiktok.com/@_mm.mia" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="p-3 bg-white/10 hover:bg-pink-500/20 rounded-full transition-all duration-300 hover:scale-125"
+                      >
+                        <div className="w-6 h-6 text-pink-400 hover:text-white transition-colors font-bold text-sm flex items-center justify-center">
+                          TT
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        );
+
+      case 'press':
+        return (
+          <section className="py-24 px-6 min-h-screen flex items-center">
+            <div className="max-w-7xl mx-auto w-full">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-extralight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-400">
+                  MEDIJI O NAMA
+                </h2>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {pressArticles.map((article, index) => (
+                  <a
+                    key={article.id}
+                    href={article.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 cursor-pointer block"
+                    style={{
+                      animationDelay: `${index * 0.1}s`,
+                      transform: 'perspective(1000px) rotateX(5deg) rotateY(-2deg)'
+                    }}
+                  >
+                    <div className="relative overflow-hidden">
+                      <img 
+                        src={article.image}
+                        alt={article.title}
+                        className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute top-4 right-4 text-purple-300 opacity-80 group-hover:text-white transition-colors">
+                        <Newspaper className="w-6 h-6" />
+                      </div>
+                      <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1">
+                        <span className="text-xs font-light text-white/90">{article.portal}</span>
+                      </div>
+                    </div>
+                    
+                    <div className="p-6">
+                      <div className="flex items-start justify-between mb-3">
+                        <h3 className="text-lg font-light group-hover:text-purple-300 transition-colors leading-tight flex-1">
+                          {article.title}
+                        </h3>
+                        <ExternalLink className="w-4 h-4 text-purple-400 opacity-60 group-hover:opacity-100 transition-opacity ml-2 flex-shrink-0 mt-1" />
+                      </div>
+                      <p className="text-sm opacity-60 font-light">
+                        {article.date}
+                      </p>
+                    </div>
+                    
+                    <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/0 to-blue-600/0 group-hover:from-purple-600/10 group-hover:to-blue-600/10 transition-all duration-500 pointer-events-none"></div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+
+      case 'contact':
+        return (
+          <section className="py-24 px-6 min-h-screen flex items-center">
+            <div className="max-w-4xl mx-auto text-center w-full">
+              <h2 className="text-5xl md:text-6xl font-extralight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
+                Kontaktirajte nas
+              </h2>
+              
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12 transform perspective-1000 rotateX-2">
+                <p className="text-xl font-light mb-8 opacity-90">
+                  Spremni ste pokrenuti svoj brand na sljedeću razinu?
+                </p>
+                
+                <a 
+                  href="mailto:info@adoresfsh.com?subject=Upit za suradnju&body=Pozdrav,%0D%0A%0D%0AŽelim saznati više o vašim uslugama.%0D%0A%0D%0ASrdačan pozdrav"
+                  className="group inline-block bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 px-8 py-4 rounded-full font-light text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25"
+                >
+                  <Mail className="inline-block mr-2 w-5 h-5" />
+                  Pošaljite upit
+                  <ArrowRight className="inline-block ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </a>
+              </div>
+            </div>
+          </section>
+        );
+
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white font-thin">
       {/* Navigation */}
@@ -97,98 +355,98 @@ Giveaway / aktivacije zajednice`,
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-extralight tracking-wider">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-white">
+              <span className="text-white">
                 ADORES.FSH
               </span>
             </div>
+            
+            {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8 font-light">
-              <a href="#home" className="text-white hover:text-purple-300 transition-all duration-300">Početna</a>
-              <a href="#services" className="text-white hover:text-purple-300 transition-all duration-300">Usluge</a>
-              <a href="#about" className="text-white hover:text-purple-300 transition-all duration-300">O nama</a>
-              <a href="#press" className="text-white hover:text-purple-300 transition-all duration-300">Mediji</a>
-              <a href="#contact" className="text-white hover:text-purple-300 transition-all duration-300">Kontakt</a>
+              <button 
+                onClick={() => navigateToSection('home')}
+                className={`transition-all duration-300 ${activeSection === 'home' ? 'text-purple-300' : 'text-white hover:text-purple-300'}`}
+              >
+                Početna
+              </button>
+              <button 
+                onClick={() => navigateToSection('services')}
+                className={`transition-all duration-300 ${activeSection === 'services' ? 'text-purple-300' : 'text-white hover:text-purple-300'}`}
+              >
+                Usluge
+              </button>
+              <button 
+                onClick={() => navigateToSection('about')}
+                className={`transition-all duration-300 ${activeSection === 'about' ? 'text-purple-300' : 'text-white hover:text-purple-300'}`}
+              >
+                O nama
+              </button>
+              <button 
+                onClick={() => navigateToSection('press')}
+                className={`transition-all duration-300 ${activeSection === 'press' ? 'text-purple-300' : 'text-white hover:text-purple-300'}`}
+              >
+                Mediji
+              </button>
+              <button 
+                onClick={() => navigateToSection('contact')}
+                className={`transition-all duration-300 ${activeSection === 'contact' ? 'text-purple-300' : 'text-white hover:text-purple-300'}`}
+              >
+                Kontakt
+              </button>
             </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden p-2 text-white hover:text-purple-300 transition-colors"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
           </div>
+
+          {/* Mobile Navigation */}
+          {mobileMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 border-t border-white/10">
+              <div className="flex flex-col space-y-4 pt-4">
+                <button 
+                  onClick={() => navigateToSection('home')}
+                  className={`text-left transition-all duration-300 ${activeSection === 'home' ? 'text-purple-300' : 'text-white hover:text-purple-300'}`}
+                >
+                  Početna
+                </button>
+                <button 
+                  onClick={() => navigateToSection('services')}
+                  className={`text-left transition-all duration-300 ${activeSection === 'services' ? 'text-purple-300' : 'text-white hover:text-purple-300'}`}
+                >
+                  Usluge
+                </button>
+                <button 
+                  onClick={() => navigateToSection('about')}
+                  className={`text-left transition-all duration-300 ${activeSection === 'about' ? 'text-purple-300' : 'text-white hover:text-purple-300'}`}
+                >
+                  O nama
+                </button>
+                <button 
+                  onClick={() => navigateToSection('press')}
+                  className={`text-left transition-all duration-300 ${activeSection === 'press' ? 'text-purple-300' : 'text-white hover:text-purple-300'}`}
+                >
+                  Mediji
+                </button>
+                <button 
+                  onClick={() => navigateToSection('contact')}
+                  className={`text-left transition-all duration-300 ${activeSection === 'contact' ? 'text-purple-300' : 'text-white hover:text-purple-300'}`}
+                >
+                  Kontakt
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="andras-vas-Bd7gNnWJBkU-unsplash copy copy copy copy copy.jpg"
-            alt="Marketing team"
-            className="w-full h-full object-cover transform scale-110"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900"></div>
-        </div>
-        
-        <div className="absolute bottom-24 left-6 z-20 text-left max-w-2xl">
-          <h1 className="text-6xl md:text-8xl font-extralight mb-6 leading-tight transform perspective-1000 rotateX-5">
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-white to-blue-300">
-              BrandMatch
-            </span>
-          </h1>
-          <p className="text-xl md:text-2xl font-light mb-8 opacity-90 leading-relaxed ml-0">
-            Kod pretvaramo u uspjeh.
-          </p>
-        </div>
-        
-        {/* Floating elements */}
-        <div className="absolute top-1/4 left-10 w-20 h-20 bg-purple-500/20 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-1/3 right-10 w-32 h-32 bg-blue-500/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
-      </section>
-
-      {/* Services Section */}
-      <section id="services" className="py-24 px-6 relative z-10">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extralight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-400">
-             ŠTO MOŽEMO UČINITI ZA VAS
-            </h2>
-            <p className="text-xl font-light opacity-80 max-w-2xl mx-auto">
-              Spoj kreativnosti i tehnologije za brendove koji žele ostati zapamćeni
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => (
-              <div 
-                key={service.id}
-                className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 cursor-pointer"
-                onClick={() => openModal(service.id)}
-                style={{
-                  animationDelay: `${index * 0.1}s`,
-                  transform: 'perspective(1000px) rotateX(5deg) rotateY(-2deg)'
-                }}
-              >
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute top-4 right-4 text-purple-300 opacity-80 group-hover:text-white transition-colors">
-                    {service.icon}
-                  </div>
-                </div>
-                
-                <div className="p-6">
-                  <h3 className="text-xl font-light mb-3 group-hover:text-purple-300 transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm opacity-70 font-light leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-                
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/0 to-blue-600/0 group-hover:from-purple-600/10 group-hover:to-blue-600/10 transition-all duration-500 pointer-events-none"></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Main Content */}
+      <main className="pt-20">
+        {renderSection()}
+      </main>
 
       {/* Modal */}
       {selectedService && selectedServiceData && (
@@ -219,7 +477,7 @@ Giveaway / aktivacije zajednice`,
             </div>
             
             <div className="p-6 md:p-8 overflow-y-auto max-h-[calc(90vh-20rem)]">
-              <p className="text-lg md:text-xl font-light leading-relaxed opacity-90">
+              <p className="text-lg md:text-xl font-light leading-relaxed opacity-90 whitespace-pre-line">
                 {selectedServiceData.fullDescription}
               </p>
               
@@ -235,172 +493,6 @@ Giveaway / aktivacije zajednice`,
           </div>
         </div>
       )}
-
-      {/* About Section */}
-      <section id="about" className="py-24 px-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl md:text-6xl font-extralight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
-            O nama
-          </h2>
-          
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12 transform perspective-1000 rotateX-2">
-            <div className="space-y-6">
-              <div className="flex items-center justify-center space-x-4 mb-8">
-                <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
-                <h3 className="text-2xl font-light">Obrt ADORES.FSH</h3>
-                <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-500"></div>
-              </div>
-              
-              <p className="text-lg font-light opacity-90 mb-6">
-                Vlasnica: <span className="text-purple-300">Mia Miškulin</span>
-              </p>
-              
-              {/* Owner Description Section */}
-              <div className="bg-gradient-to-r from-purple-900/60 to-purple-600/40 rounded-xl p-6 mb-6 border border-purple-500/20">
-                <h4 className="text-lg font-light text-purple-200 mb-4">O vlasnici</h4>
-                <div className="text-left space-y-3">
-                  <p className="font-light opacity-90 leading-relaxed">
-                    Ja sam Mia Miškulin — MM.Mia. Influencerica, content kreatorica i osnivačica ADORES.FSH. Rođena u Vukovaru, živim u Beču, a svoju zajednicu gradim kroz autentičan sadržaj, marketing i projekte koji donose stvarne rezultate. Pronađi me na društvenim mrežama kao @mm.mia.
-Sažeto “O meni”
-Ja sam Mia Miškulin (MM.Mia), influencerica i poduzetnica. Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru Marketing & Sales te paralelno razvijala karijeru na YouTubeu i drugim mrežama. 1. srpnja 2023. pokrećem vlastiti obrt ADORES.FSH i svoj brend, a uz marketing kontinuirano usavršavam programiranje kako bih brendovima ponudila cjelovita digitalna rješenja.
-Duže “O meni”
-Rođena sam 2005. u Vukovaru, a od 2014. živim u Beču. Karijeru sam započela na YouTubeu, a ubrzo se proširila na druge društvene mreže pod imenom MM.Mia. Završila sam Vienna Business School, nastavila studij Marketing & Sales i 1. srpnja 2023. osnovala ADORES.FSH, kroz koji spajam influencer suradnje, strateško vođenje profila, kreiranje sadržaja i sve više web/programerskih rješenja. Moj fokus je jasan: kreativnost + strategija + mjerljivi rezultati.
-                  </p>
-                  <p className="font-light opacity-90 leading-relaxed">
-                    
-                  </p>
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                <div className="flex items-center space-x-3">
-                  <MapPin className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                  <span className="font-light">Dr. Franje Tuđmana 27A, Ilok, 32236, Hrvatska</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Calendar className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                  <span className="font-light">Osnovan 1. srpnja 2023.</span>
-                </div>
-              </div>
-              
-              <div className="mt-8 pt-6 border-t border-white/20">
-                <h4 className="text-xl font-light text-center mb-4 text-purple-300">MM.Mia</h4>
-                <div className="flex justify-center space-x-6">
-                  <a 
-                    href="https://instagram.com/mm.mia1" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-3 bg-white/10 hover:bg-purple-500/20 rounded-full transition-all duration-300 hover:scale-125"
-                  >
-                    <Instagram className="https://www.instagram.com/mm.mia1/" />
-                  </a>
-                  <a 
-                    href="https://www.facebook.com/mm.miablogger" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-3 bg-white/10 hover:bg-blue-500/20 rounded-full transition-all duration-300 hover:scale-125"
-                  >
-                    <Facebook className="w-6 h-6 text-blue-400 hover:text-white transition-colors" />
-                  </a>
-                  <a 
-                    href="https://www.tiktok.com/@_mm.mia" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-3 bg-white/10 hover:bg-pink-500/20 rounded-full transition-all duration-300 hover:scale-125"
-                  >
-                    <div className="w-6 h-6 text-pink-400 hover:text-white transition-colors font-bold text-sm flex items-center justify-center">
-                      TT
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Press/Media Section */}
-      <section id="press" className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extralight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-400">
-              MEDIJI O NAMA
-            </h2> 
-            <p className="text-lg font-light opacity-80 max-w-3xl mx-auto mt-4 leading-relaxed">
-              
-       
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {pressArticles.map((article, index) => (
-              <a
-                key={article.id}
-                href={article.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 cursor-pointer block"
-                style={{
-                  animationDelay: `${index * 0.1}s`,
-                  transform: 'perspective(1000px) rotateX(5deg) rotateY(-2deg)'
-                }}
-              >
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={article.image}
-                    alt={article.title}
-                    className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute top-4 right-4 text-purple-300 opacity-80 group-hover:text-white transition-colors">
-                    <Newspaper className="w-6 h-6" />
-                  </div>
-                  <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1">
-                    <span className="text-xs font-light text-white/90">{article.portal}</span>
-                  </div>
-                </div>
-                
-                <div className="p-6">
-                  <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-lg font-light group-hover:text-purple-300 transition-colors leading-tight flex-1">
-                      {article.title}
-                    </h3>
-                    <ExternalLink className="w-4 h-4 text-purple-400 opacity-60 group-hover:opacity-100 transition-opacity ml-2 flex-shrink-0 mt-1" />
-                  </div>
-                  <p className="text-sm opacity-60 font-light">
-                    {article.date}
-                  </p>
-                </div>
-                
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/0 to-blue-600/0 group-hover:from-purple-600/10 group-hover:to-blue-600/10 transition-all duration-500 pointer-events-none"></div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="py-24 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl md:text-6xl font-extralight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
-            Kontaktirajte nas
-          </h2>
-          
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12 transform perspective-1000 rotateX-2">
-            <p className="text-xl font-light mb-8 opacity-90">
-              Spremni ste pokrenuti svoj brand na sljedeću razinu?
-            </p>
-            
-            <a 
-              href="mailto:info@adoresfsh.com?subject=Upit za suradnju&body=Pozdrav,%0D%0A%0D%0AŽelim saznati više o vašim uslugama.%0D%0A%0D%0ASrdačan pozdrav"
-              className="group inline-block bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 px-8 py-4 rounded-full font-light text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25"
-            >
-              <Mail className="inline-block mr-2 w-5 h-5" />
-              Pošaljite upit
-              <ArrowRight className="inline-block ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </a>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-black/30 border-t border-white/10 py-8 px-6">
