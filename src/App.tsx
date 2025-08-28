@@ -1,8 +1,9 @@
 import React from 'react';
-import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Newspaper, Instagram, Facebook } from 'lucide-react';
+import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Newspaper, Instagram, Facebook, Menu } from 'lucide-react';
 
 function App() {
   const [selectedService, setSelectedService] = React.useState<number | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const services = [
     {
@@ -88,6 +89,20 @@ Giveaway / aktivacije zajednice`,
     document.body.style.overflow = 'unset';
   };
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+    if (!isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+    document.body.style.overflow = 'unset';
+  };
+
   const selectedServiceData = services.find(service => service.id === selectedService);
 
   return (
@@ -108,9 +123,75 @@ Giveaway / aktivacije zajednice`,
               <a href="#press" className="text-white hover:text-purple-300 transition-all duration-300">Mediji</a>
               <a href="#contact" className="text-white hover:text-purple-300 transition-all duration-300">Kontakt</a>
             </div>
+            
+            {/* Mobile menu button */}
+            <button
+              onClick={toggleMobileMenu}
+              className="md:hidden p-2 text-white hover:text-purple-300 transition-colors"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
           </div>
         </div>
       </nav>
+
+      {/* Mobile Menu Overlay */}
+      <div className={`fixed inset-0 z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
+        <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={closeMobileMenu}></div>
+        <div className="absolute right-0 top-0 h-full w-80 bg-slate-900 border-l border-white/20 shadow-2xl">
+          <div className="flex items-center justify-between p-6 border-b border-white/10">
+            <div className="text-xl font-extralight tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-white">
+              ADORES.FSH
+            </div>
+            <button
+              onClick={closeMobileMenu}
+              className="p-2 text-white hover:text-purple-300 transition-colors"
+            >
+              <X className="w-6 h-6" />
+            </button>
+          </div>
+          
+          <nav className="p-6">
+            <div className="space-y-6">
+              <a 
+                href="#home" 
+                onClick={closeMobileMenu}
+                className="block text-xl font-light text-white hover:text-purple-300 transition-all duration-300 py-2"
+              >
+                Početna
+              </a>
+              <a 
+                href="#services" 
+                onClick={closeMobileMenu}
+                className="block text-xl font-light text-white hover:text-purple-300 transition-all duration-300 py-2"
+              >
+                Usluge
+              </a>
+              <a 
+                href="#about" 
+                onClick={closeMobileMenu}
+                className="block text-xl font-light text-white hover:text-purple-300 transition-all duration-300 py-2"
+              >
+                O nama
+              </a>
+              <a 
+                href="#press" 
+                onClick={closeMobileMenu}
+                className="block text-xl font-light text-white hover:text-purple-300 transition-all duration-300 py-2"
+              >
+                Mediji
+              </a>
+              <a 
+                href="#contact" 
+                onClick={closeMobileMenu}
+                className="block text-xl font-light text-white hover:text-purple-300 transition-all duration-300 py-2"
+              >
+                Kontakt
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
 
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24">
