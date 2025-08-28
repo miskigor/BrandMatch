@@ -102,11 +102,11 @@ Giveaway / aktivacije zajednice`,
               </span>
             </div>
             <div className="hidden md:flex space-x-8 font-light">
-              <a href="#home" className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-white hover:from-purple-400 hover:to-white transition-all duration-300">Početna</a>
-              <a href="#services" className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-white hover:from-purple-400 hover:to-white transition-all duration-300">Usluge</a>
-              <a href="#about" className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-white hover:from-purple-400 hover:to-white transition-all duration-300">O nama</a>
-              <a href="#press" className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-white hover:from-purple-400 hover:to-white transition-all duration-300">Mediji</a>
-              <a href="#contact" className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-white hover:from-purple-400 hover:to-white transition-all duration-300">Kontakt</a>
+              <a href="#home" className="text-white hover:text-purple-300 transition-all duration-300">Početna</a>
+              <a href="#services" className="text-white hover:text-purple-300 transition-all duration-300">Usluge</a>
+              <a href="#about" className="text-white hover:text-purple-300 transition-all duration-300">O nama</a>
+              <a href="#press" className="text-white hover:text-purple-300 transition-all duration-300">Mediji</a>
+              <a href="#contact" className="text-white hover:text-purple-300 transition-all duration-300">Kontakt</a>
             </div>
           </div>
         </div>
