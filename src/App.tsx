@@ -126,7 +126,7 @@ Giveaway / aktivacije zajednice`,
               {/* Social Media Icons */}
               <div className="flex items-center space-x-4 ml-6 pl-6 border-l border-white/20">
                 <a 
-                  href="https://www.instagram.com/mm.mia1/" 
+                  href="https://www.instagram.com/brandmatch1/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white hover:text-purple-300 transition-all duration-300 hover:scale-110"
@@ -135,7 +135,7 @@ Giveaway / aktivacije zajednice`,
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a 
-                  href="https://www.facebook.com/mm.miablogger" 
+                  href="https://www.facebook.com/profile.php?id=61574606981810" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white hover:text-purple-300 transition-all duration-300 hover:scale-110"
