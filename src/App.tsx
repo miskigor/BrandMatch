@@ -344,8 +344,7 @@ Giveaway / aktivacije zajednice`,
                     Ja sam Mia Miškulin — MM.Mia. Influencerica, content kreatorica i osnivačica ADORES.FSH. Rođena u Vukovaru, živim u Beču, a svoju zajednicu gradim kroz autentičan sadržaj, marketing i projekte koji donose stvarne rezultate. Pronađi me na društvenim mrežama kao @mm.mia.
 Sažeto “O meni”
 Ja sam Mia Miškulin (MM.Mia), influencerica i poduzetnica. Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru Marketing & Sales te paralelno razvijala karijeru na YouTubeu i drugim mrežama. 1. srpnja 2023. pokrećem vlastiti obrt ADORES.FSH i svoj brend, a uz marketing kontinuirano usavršavam programiranje kako bih brendovima ponudila cjelovita digitalna rješenja.
-Duže “O meni”
-Rođena sam 2005. u Vukovaru, a od 2014. živim u Beču. Karijeru sam započela na YouTubeu, a ubrzo se proširila na druge društvene mreže pod imenom MM.Mia. Završila sam Vienna Business School, nastavila studij Marketing & Sales i 1. srpnja 2023. osnovala ADORES.FSH, kroz koji spajam influencer suradnje, strateško vođenje profila, kreiranje sadržaja i sve više web/programerskih rješenja. Moj fokus je jasan: kreativnost + strategija + mjerljivi rezultati.
+
                   </p>
                   <p className="font-light opacity-90 leading-relaxed">
                     
