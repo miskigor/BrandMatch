@@ -122,6 +122,28 @@ Giveaway / aktivacije zajednice`,
               <a href="#about" className="text-white hover:text-purple-300 transition-all duration-300">O nama</a>
               <a href="#press" className="text-white hover:text-purple-300 transition-all duration-300">Mediji</a>
               <a href="#contact" className="text-white hover:text-purple-300 transition-all duration-300">Kontakt</a>
+              
+              {/* Social Media Icons */}
+              <div className="flex items-center space-x-4 ml-6 pl-6 border-l border-white/20">
+                <a 
+                  href="https://www.instagram.com/mm.mia1/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-purple-300 transition-all duration-300 hover:scale-110"
+                  title="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a 
+                  href="https://www.facebook.com/mm.miablogger" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-purple-300 transition-all duration-300 hover:scale-110"
+                  title="Facebook"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+              </div>
             </div>
             
             {/* Mobile menu button */}
