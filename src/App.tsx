@@ -437,7 +437,7 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
             {pressArticles.map((article, index) => (
               <a
                 key={article.id}
-                href="https://www.facebook.com/profile.php?id=61574606981810" 
+               href={article.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 cursor-pointer block"
