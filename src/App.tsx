@@ -245,7 +245,7 @@ Giveaway / aktivacije zajednice`,
         
         <div className="absolute bottom-24 left-6 z-20 text-left max-w-2xl">
           <h1 className="text-4xl md:text-6xl font-extralight mb-6 leading-tight transform perspective-1000 rotateX-5">
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-white to-blue-300">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-white to-blue-300 animate-fade-in-hero">
               BrandMatch
             </span>
           </h1>
