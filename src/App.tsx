@@ -250,7 +250,7 @@ Giveaway / aktivacije zajednice`,
             </span>
           </h1>
           <p className="text-xl md:text-2xl font-light mb-8 opacity-90 leading-relaxed ml-0">
-            Kod pretvaramo u uspjeh.
+            <span className="animate-fade-in-subtitle">Kod pretvaramo u uspjeh.</span>
           </p>
         </div>
         

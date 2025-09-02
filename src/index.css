@@ -116,3 +116,20 @@ html {
 .animate-fade-in-hero {
   animation: fadeInHero 1.8s ease-out forwards;
 }
+
+/* Subtitle fade-in animation */
+@keyframes fadeInSubtitle {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-subtitle {
+  animation: fadeInSubtitle 1.6s ease-out 0.5s forwards;
+  opacity: 0;
+}
