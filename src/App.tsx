@@ -4,6 +4,23 @@ import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X
 function App() {
   const [selectedService, setSelectedService] = React.useState<number | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const [visibleWords, setVisibleWords] = React.useState(0);
+
+  const servicesTitle = "ŠTO MOŽEMO UČINITI ZA VAS";
+  const titleWords = servicesTitle.split(' ');
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setVisibleWords(prev => {
+        if (prev < titleWords.length) {
+          return prev + 1;
+        }
+        return prev;
+      });
+    }, 300); // 300ms delay between words
+
+    return () => clearInterval(timer);
+  }, [titleWords.length]);
 
   const services = [
     {
@@ -246,8 +263,22 @@ Giveaway / aktivacije zajednice`,
       <section id="services" className="py-24 px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extralight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-400">
-             ŠTO MOŽEMO UČINITI ZA VAS
+            <h2 className="text-4xl md:text-5xl font-extralight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-400 min-h-[4rem] md:min-h-[5rem]">
+              {titleWords.map((word, index) => (
+                <span
+                  key={index}
+                  className={`inline-block mr-3 transition-all duration-500 ${
+                    index < visibleWords 
+                      ? 'opacity-100 transform translate-y-0' 
+                      : 'opacity-0 transform translate-y-4'
+                  }`}
+                  style={{
+                    transitionDelay: `${index * 100}ms`
+                  }}
+                >
+                  {word}
+                </span>
+              ))}
             </h2>
             <p className="text-xl font-light opacity-80 max-w-2xl mx-auto">
               Spoj kreativnosti i tehnologije za brendove koji žele ostati zapamćeni
