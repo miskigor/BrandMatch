@@ -499,7 +499,7 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
       {/* Contact Section */}
       <section id="contact" className="py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl md:text-6xl font-extralight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
+          <h2 className="text-5xl md:text-6xl font-extralight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 animate-fade-in-slow">
             Kontaktirajte nas
           </h2>
           

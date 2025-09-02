@@ -84,3 +84,19 @@ html {
 .animate-fade-in {
   animation: fadeIn 1.5s ease-out forwards;
 }
+
+/* Slower fade-in animation for contact section */
+@keyframes fadeInSlow {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-slow {
+  animation: fadeInSlow 2s ease-out forwards;
+}
