@@ -58,7 +58,7 @@ Giveaway / aktivacije zajednice`,
       title: "Mlada Iločanka koja danas živi u Beču pokreće svoj modni brend Adores",
       image: "/On Black (1).jpg",
       portal: "Diva.vecernji.hr",
-      link: "https://diva.vecernji.hr/moda/mlada-ilocanka-koja-danas-zivi-u-becu-pokrece-svoj-modni-brand-adores-19863",
+      link: "https://diva.vecernji.hr/moda/mlada-ilocanka-koja-danas-zivi-u-becu-pokrece-svoj-modni-brand-adores-19863',
       date: "15. siječnja 2024."
     },
     {
