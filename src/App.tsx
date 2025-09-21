@@ -125,7 +125,8 @@ Giveaway / aktivacije zajednice`,
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white font-thin">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-black/30 backdrop-blur-lg border-b border-white/10">
+      <header>
+        <nav className="fixed top-0 w-full z-50 bg-black/30 backdrop-blur-lg border-b border-white/10" role="navigation" aria-label="Glavna navigacija">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-extralight tracking-wider">
@@ -134,11 +135,11 @@ Giveaway / aktivacije zajednice`,
               </span>
             </div>
             <div className="hidden md:flex space-x-8 font-light">
-              <a href="#home" className="text-white hover:text-purple-300 transition-all duration-300">Početna</a>
-              <a href="#services" className="text-white hover:text-purple-300 transition-all duration-300">Usluge</a>
-              <a href="#about" className="text-white hover:text-purple-300 transition-all duration-300">O nama</a>
-              <a href="#press" className="text-white hover:text-purple-300 transition-all duration-300">Mediji</a>
-              <a href="#contact" className="text-white hover:text-purple-300 transition-all duration-300">Kontakt</a>
+              <a href="#home" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Idi na početnu stranicu">Početna</a>
+              <a href="#services" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj naše usluge">Usluge</a>
+              <a href="#about" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Saznaj više o nama">O nama</a>
+              <a href="#press" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj medijske članke">Mediji</a>
+              <a href="#contact" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Kontaktiraj nas">Kontakt</a>
               
               {/* Social Media Icons */}
               <div className="flex items-center space-x-4 ml-6 pl-6 border-l border-white/20">
@@ -172,7 +173,8 @@ Giveaway / aktivacije zajednice`,
             </button>
           </div>
         </div>
-      </nav>
+        </nav>
+      </header>
 
       {/* Mobile Menu Overlay */}
       <div className={`fixed inset-0 z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
@@ -233,11 +235,12 @@ Giveaway / aktivacije zajednice`,
       </div>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24">
+      <main>
+        <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24" aria-label="Glavna sekcija">
         <div className="absolute inset-0 z-0">
           <img
             src="andras-vas-Bd7gNnWJBkU-unsplash copy copy copy copy copy.jpg"
-            alt="Marketing team"
+            alt="Profesionalni marketing tim BrandMatch agencije radeći na kreativnim projektima"
             className="w-full h-full object-cover transform scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900"></div>
@@ -257,10 +260,10 @@ Giveaway / aktivacije zajednice`,
         {/* Floating elements */}
         <div className="absolute top-1/4 left-10 w-20 h-20 bg-purple-500/20 rounded-full blur-xl animate-pulse"></div>
         <div className="absolute bottom-1/3 right-10 w-32 h-32 bg-blue-500/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
-      </section>
+        </section>
 
       {/* Services Section */}
-      <section id="services" className="py-24 px-6 relative z-10">
+      <section id="services" className="py-24 px-6 relative z-10" aria-label="Naše usluge">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-extralight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-400 animate-fade-in">
@@ -285,7 +288,7 @@ Giveaway / aktivacije zajednice`,
                 <div className="relative overflow-hidden">
                   <img 
                     src={service.image}
-                    alt={service.title}
+                    alt={`Ilustracija usluge: ${service.title} - ${service.description}`}
                     className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -324,7 +327,7 @@ Giveaway / aktivacije zajednice`,
             <div className="relative h-64 md:h-80">
               <img
                 src={selectedServiceData.image}
-                alt={selectedServiceData.title}
+                alt={`Detaljna ilustracija usluge: ${selectedServiceData.title}`}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
@@ -357,7 +360,7 @@ Giveaway / aktivacije zajednice`,
       )}
 
       {/* About Section */}
-      <section id="about" className="py-24 px-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm">
+      <section id="about" className="py-24 px-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm" aria-label="O nama">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-extralight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
             O nama
@@ -438,7 +441,7 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
       </section>
 
       {/* Press/Media Section */}
-      <section id="press" className="py-24 px-6">
+      <section id="press" className="py-24 px-6" aria-label="Medijski sadržaj">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-extralight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-400">
@@ -466,7 +469,7 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
                 <div className="relative overflow-hidden">
                   <img 
                     src={article.image}
-                    alt={article.title}
+                    alt={`Medijski članak: ${article.title} objavljen u ${article.portal}`}
                     className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute top-4 right-4 text-purple-300 opacity-80 group-hover:text-white transition-colors">
@@ -497,7 +500,7 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 px-6">
+      <section id="contact" className="py-24 px-6" aria-label="Kontakt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-extralight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 animate-fade-in-slow">
             Kontaktirajte nas
@@ -519,9 +522,10 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
           </div>
         </div>
       </section>
+      </main>
 
       {/* Footer */}
-      <footer className="bg-black/30 border-t border-white/10 py-8 px-6">
+      <footer className="bg-black/30 border-t border-white/10 py-8 px-6" role="contentinfo">
         <div className="max-w-7xl mx-auto text-center">
           <div className="text-2xl font-extralight tracking-wider mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
             ADORES.FSH
