@@ -1,0 +1,44 @@
+e/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}
+
+{
+  "name": "BrandMatch - ADORES.FSH Marketing Agencija",
+  "short_name": "ADORES.FSH",
+  "description": "Profesionalna marketing agencija BrandMatch (ADORES.FSH) pruža usluge vođenja društvenih mreža, izrade web stranica, razvoja mobilnih aplikacija i suradnje na društvenim mrežama.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e293b",
+  "theme_color": "#1e293b",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "hr",
+  "dir": "ltr",
+  "categories": ["business", "marketing", "technology"],
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "imag
