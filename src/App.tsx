@@ -412,8 +412,9 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 bg-white/10 hover:bg-purple-500/20 rounded-full transition-all duration-300 hover:scale-125"
+                    aria-label="Posjetite MM.Mia Instagram profil"
                   >
-                    <Instagram className="https://www.instagram.com/mm.mia1/" />
+                    <Instagram className="w-6 h-6 text-purple-400 hover:text-white transition-colors" />
                   </a>
                   <a 
                     href="https://www.facebook.com/mm.miablogger" 

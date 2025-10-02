@@ -1,8 +1,14 @@
 User-agent: *
 Allow: /
 
+# Important pages
+Allow: /index.html
+Allow: /*.css
+Allow: /*.js
+Allow: /images/
+
 # Sitemap
-Sitemap: https://adoresfsh.com/sitemap.xml
+Sitemap: https://brandmatch-marketing-pgqi.bolt.host/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
