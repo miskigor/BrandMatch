@@ -250,17 +250,19 @@ Giveaway / aktivacije zajednice`,
             src="andras-vas-Bd7gNnWJBkU-unsplash copy copy copy copy copy.jpg"
             alt="Profesionalni marketing tim BrandMatch agencije radeći na kreativnim projektima"
             className="w-full h-full object-cover transform scale-110"
+            loading="eager"
+            fetchpriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900"></div>
         </div>
         
         <div className="absolute bottom-24 left-6 z-20 text-left max-w-2xl">
-          <h1 className="text-4xl md:text-6xl font-extralight mb-6 leading-tight transform perspective-1000 rotateX-5">
+          <h1 className="text-4xl md:text-6xl font-extralight mb-6 leading-tight transform perspective-1000 rotateX-5" itemProp="name">
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-white to-blue-300 animate-fade-in-hero">
               BrandMatch
             </span>
           </h1>
-          <p className="text-xl md:text-2xl font-light mb-8 opacity-90 leading-relaxed ml-0">
+          <p className="text-xl md:text-2xl font-light mb-8 opacity-90 leading-relaxed ml-0" itemProp="description">
             <span className="animate-fade-in-subtitle">Kod pretvaramo u uspjeh.</span>
           </p>
         </div>
