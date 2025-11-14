@@ -522,6 +522,7 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
                     src={article.image}
                     alt={`Medijski članak: ${article.title} objavljen u ${article.portal}`}
                     className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
                   />
                   <div className="absolute top-4 right-4 text-purple-300 opacity-80 group-hover:text-white transition-colors">
                     <Newspaper className="w-6 h-6" />
