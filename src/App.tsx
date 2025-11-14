@@ -378,8 +378,8 @@ Giveaway / aktivacije zajednice`,
             {/* Slika */}
             <div className="mb-8">
               <img 
-                src="/On Black (1).jpg" 
-                alt="Naš proizvod" 
+                src="/Slika zaslona 2025-11-14 u 18.26.20.png" 
+                alt="Moderan Sistem za Salone - Online booking, upravljanje terminima, statistika" 
                 className="w-full max-w-md mx-auto rounded-xl shadow-2xl"
               />
             </div>
@@ -387,19 +387,19 @@ Giveaway / aktivacije zajednice`,
             {/* Tekst */}
             <div className="mb-8">
               <p className="text-lg font-light opacity-90 leading-relaxed">
-                Ovdje možete dodati opis vašeg proizvoda. Opišite što čini vaš proizvod posebnim i zašto bi kupci trebali biti zainteresirani.
+                Moderan Sistem za Salone - kompletno rješenje za frizerske i barber salone. Online booking, upravljanje terminima, statistika i sve što vam treba za uspješan salon. Bez kreditne kartice • 7 dana trial • Otkažite bilo kada.
               </p>
             </div>
             
             {/* Link */}
             <div>
               <a 
-                href="https://instagram.com/mm.mia1" 
+                href="#contact" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 px-8 py-4 rounded-full font-light text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25"
               >
-                Pogledaj proizvod
+                Saznaj više
                 <ArrowRight className="inline-block ml-2 w-5 h-5" />
               </a>
             </div>
