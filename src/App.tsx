@@ -392,7 +392,7 @@ Giveaway / aktivacije zajednice`,
             </div>
             
             {/* Link */}
-            <divhttps://brandmatchonline.com/>
+            <div>
               <a 
                 href="#contact" 
                 target="_blank" 
