@@ -137,6 +137,7 @@ Giveaway / aktivacije zajednice`,
             <div className="hidden md:flex space-x-8 font-light">
               <a href="#home" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Idi na početnu stranicu">Početna</a>
               <a href="#services" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj naše usluge">Usluge</a>
+              <a href="#product" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj naš proizvod">Proizvod</a>
               <a href="#about" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Saznaj više o nama">O nama</a>
               <a href="#press" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj medijske članke">Mediji</a>
               <a href="#contact" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Kontaktiraj nas">Kontakt</a>
@@ -207,6 +208,13 @@ Giveaway / aktivacije zajednice`,
                 className="block text-xl font-light text-white hover:text-purple-300 transition-all duration-300 py-2"
               >
                 Usluge
+              </a>
+              <a 
+                href="#product" 
+                onClick={closeMobileMenu}
+                className="block text-xl font-light text-white hover:text-purple-300 transition-all duration-300 py-2"
+              >
+                Proizvod
               </a>
               <a 
                 href="#about" 
@@ -358,6 +366,108 @@ Giveaway / aktivacije zajednice`,
           </div>
         </div>
       )}
+
+      {/* Product Section */}
+      <section id="product" className="py-24 px-6 bg-gradient-to-r from-purple-900/20 to-blue-900/20 backdrop-blur-sm" aria-label="Naš proizvod">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-extralight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-400 animate-fade-in">
+              NAŠ PROIZVOD
+            </h2>
+            <p className="text-xl font-light opacity-80 max-w-3xl mx-auto">
+              Predstavljamo ADORES - modni brend koji spaja eleganciju s modernim dizajnom
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Product Images */}
+            <div className="relative">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-4">
+                  <img 
+                    src="/korzet.jpg"
+                    alt="ADORES korzet - elegantni dio kolekcije"
+                    className="w-full h-64 object-cover rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+                  />
+                  <img 
+                    src="/IMG_3982.jpg"
+                    alt="ADORES modni detalj - kvaliteta izrade"
+                    className="w-full h-48 object-cover rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="space-y-4 mt-8">
+                  <img 
+                    src="/IMG_3983.jpg"
+                    alt="ADORES kolekcija - moderni dizajn"
+                    className="w-full h-48 object-cover rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+                  />
+                  <img 
+                    src="/IMG_3982 copy.jpg"
+                    alt="ADORES brend - luksuzni materijali"
+                    className="w-full h-64 object-cover rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              
+              {/* Floating elements */}
+              <div className="absolute -top-4 -left-4 w-24 h-24 bg-purple-500/20 rounded-full blur-xl animate-pulse"></div>
+              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-blue-500/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
+            </div>
+            
+            {/* Product Description */}
+            <div className="space-y-8">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                <h3 className="text-3xl font-light mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
+                  ADORES Fashion
+                </h3>
+                
+                <div className="space-y-6">
+                  <p className="text-lg font-light opacity-90 leading-relaxed">
+                    ADORES je modni brend koji nastaje iz strasti prema eleganciji i kvaliteti. Svaki komad odjeće dizajniran je s pažnjom prema detaljima i izrađen od najfinijih materijala.
+                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <span className="font-light">Premium kvaliteta</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <span className="font-light">Moderni dizajn</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <span className="font-light">Ručna izrada</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <span className="font-light">Limitirane kolekcije</span>
+                    </div>
+                  </div>
+                  
+                  <div className="pt-6 border-t border-white/20">
+                    <p className="text-base font-light opacity-80 leading-relaxed">
+                      Od elegantnih korzeta do sofisticiranih haljina, ADORES kolekcija donosi jedinstvene komade koji naglašavaju individualnost i stil svake žene.
+                    </p>
+                  </div>
+                  
+                  <div className="flex flex-wrap gap-4 pt-4">
+                    <a 
+                      href="https://instagram.com/mm.mia1" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 px-6 py-3 rounded-full font-light transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
+                    >
+                      <Instagram className="w-4 h-4" />
+                      <span>Pogledaj kolekciju</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* About Section */}
       <section id="about" className="py-24 px-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm" aria-label="O nama">
