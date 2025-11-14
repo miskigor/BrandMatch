@@ -387,7 +387,7 @@ Giveaway / aktivacije zajednice`,
             {/* Tekst */}
             <div className="mb-8">
               <p className="text-lg font-light opacity-90 leading-relaxed">
-                Moderan Sistem za Salone - kompletno rješenje za frizerske i barber salone. Online booking, upravljanje terminima, statistika i sve što vam treba za uspješan salon.                                       Bez kreditne kartice • 7 dana trial.
+               
               </p>
             </div>
             
