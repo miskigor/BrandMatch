@@ -137,6 +137,7 @@ Giveaway / aktivacije zajednice`,
             <div className="hidden md:flex space-x-8 font-light">
               <a href="#home" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Idi na početnu stranicu">Početna</a>
               <a href="#services" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj naše usluge">Usluge</a>
+              <a href="#product" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj naš proizvod">Naš proizvod</a>
               <a href="#about" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Saznaj više o nama">O nama</a>
               <a href="#press" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj medijske članke">Mediji</a>
               <a href="#contact" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Kontaktiraj nas">Kontakt</a>
@@ -207,6 +208,13 @@ Giveaway / aktivacije zajednice`,
                 className="block text-xl font-light text-white hover:text-purple-300 transition-all duration-300 py-2"
               >
                 Usluge
+              </a>
+              <a 
+                href="#product" 
+                onClick={closeMobileMenu}
+                className="block text-xl font-light text-white hover:text-purple-300 transition-all duration-300 py-2"
+              >
+                Naš proizvod
               </a>
               <a 
                 href="#about" 
@@ -358,6 +366,46 @@ Giveaway / aktivacije zajednice`,
           </div>
         </div>
       )}
+
+      {/* Product Section */}
+      <section id="product" className="py-24 px-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm" aria-label="Naš proizvod">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-5xl md:text-6xl font-extralight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
+            Naš proizvod
+          </h2>
+          
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12 transform perspective-1000 rotateX-2">
+            {/* Slika */}
+            <div className="mb-8">
+              <img 
+                src="/On Black (1).jpg" 
+                alt="Naš proizvod" 
+                className="w-full max-w-md mx-auto rounded-xl shadow-2xl"
+              />
+            </div>
+            
+            {/* Tekst */}
+            <div className="mb-8">
+              <p className="text-lg font-light opacity-90 leading-relaxed">
+                Ovdje možete dodati opis vašeg proizvoda. Opišite što čini vaš proizvod posebnim i zašto bi kupci trebali biti zainteresirani.
+              </p>
+            </div>
+            
+            {/* Link */}
+            <div>
+              <a 
+                href="https://instagram.com/mm.mia1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 px-8 py-4 rounded-full font-light text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25"
+              >
+                Pogledaj proizvod
+                <ArrowRight className="inline-block ml-2 w-5 h-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* About Section */}
       <section id="about" className="py-24 px-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm" aria-label="O nama">
