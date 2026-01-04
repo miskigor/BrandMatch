@@ -409,10 +409,10 @@ Giveaway / aktivacije zajednice`,
               
               <div className="p-6">
                 <h3 className="text-xl font-light mb-3 group-hover:text-purple-300 transition-colors">
-                  Naziv Projekta 1
+                  Portfolijo Vladimir Ilic
                 </h3>
                 <p className="text-sm opacity-70 font-light leading-relaxed mb-4">
-                  Kratki opis projekta koji objašnjava što je napravljeno i kakvi su rezultati postignuti.
+                  Football Skills • Content Creator • TikTok & Instagram
                 </p>
                 <a 
                   href="#" 
