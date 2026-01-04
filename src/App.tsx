@@ -440,7 +440,8 @@ Giveaway / aktivacije zajednice`,
                   Naziv Projekta 2
                 </h3>
                 <p className="text-sm opacity-70 font-light leading-relaxed mb-4">
-                  Kratki opis projekta koji objašnjava što je napravljeno i kakvi su rezultati postignuti.
+                  Osnažujemo brendove s marketinškim rješenjima temeljenima na podacima
+
                 </p>
                 <a 
                   href="#" 
