@@ -474,7 +474,9 @@ Giveaway / aktivacije zajednice`,
                   Kuće za odmor i apartmani u Bilicama
                 </p>
                 <a 
-                  href="#" 
+                  href="https://reiseziel-kroatien.de/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center text-purple-300 hover:text-white transition-colors font-light"
                 >
                   Pogledaj projekt
