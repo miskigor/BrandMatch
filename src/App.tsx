@@ -526,10 +526,6 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                 <div className="flex items-center space-x-3">
-                  <MapPin className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                  <span className="font-light">Dr. Franje Tuđmana 27A, Ilok, 32236, Hrvatska</span>
-                </div>
-                <div className="flex items-center space-x-3">
                   <Calendar className="w-5 h-5 text-blue-400 flex-shrink-0" />
                   <span className="font-light">Osnovan 1. srpnja 2023.</span>
                 </div>
@@ -602,6 +598,10 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
         <div className="max-w-7xl mx-auto text-center">
           <div className="text-2xl font-extralight tracking-wider mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
             ADORES.FSH
+          </div>
+          <div className="flex items-center justify-center space-x-3 mb-4">
+            <MapPin className="w-4 h-4 text-purple-400 flex-shrink-0" />
+            <span className="font-light opacity-80 text-sm">Dr. Franje Tuđmana 27A, Ilok, 32236, Hrvatska</span>
           </div>
           <p className="font-light opacity-60">
             © 2024 ADORES.FSH. Sva prava pridržana.
