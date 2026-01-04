@@ -474,7 +474,7 @@ Giveaway / aktivacije zajednice`,
                 </h3>
                 <p className="text-sm opacity-70 font-light leading-relaxed mb-4">
                   Kuće za odmor i apartmani u Bilicama
-                  Vaš miran kutak na obali Prokljanskog jezera.                                                
+                  na obali Prokljanskog jezera.                                                
                 </p>
                 <a 
                   href="https://reiseziel-kroatien.de/" 
