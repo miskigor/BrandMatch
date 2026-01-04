@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Newspaper, Instagram, Facebook, Menu } from 'lucide-react';
+import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Instagram, Facebook, Menu } from 'lucide-react';
 
 function App() {
   const [selectedService, setSelectedService] = React.useState<number | null>(null);
@@ -69,32 +69,6 @@ Giveaway / aktivacije zajednice`,
     }
   ];
 
-  const pressArticles = [
-    {
-      id: 1,
-      title: "Mlada Iločanka koja danas živi u Beču pokreće svoj modni brend Adores",
-      image: "/On Black (1).jpg",
-      portal: "Diva.vecernji.hr",
-      link: "https://diva.vecernji.hr/moda/mlada-ilocanka-koja-danas-zivi-u-becu-pokrece-svoj-modni-brand-adores-19863",
-      date: "15. siječnja 2024."
-    },
-    {
-      id: 2,
-      title: "Mia Miškulin ima samo 18 godina, prati ju više od milijun ljudi, a sada ima i vlastiti modni brend",
-      image: "/On Black (1).jpg",
-      portal: "miss7.24sata.hr",
-      link: "https://miss7.24sata.hr/native-sadrzaj/mia-miskulin-ima-samo-18-godina-prati-ju-vise-od-milijun-ljudi-a-sada-ima-i-vlastiti-modni-brend-50182",
-      date: "8. prosinca 2023."
-    },
-    {
-      id: 3,
-      title: "Iločanka Mia Miškulin pokreće modni brand Adores",
-      image: "/On Black (1).jpg",
-      portal: "Press032",
-      link: "https://press032.com/ilocanka-mia-miskulin-pokrece-modni-brand-adores/#google_vignette",
-      date: "20. siječnja 2024."
-    },
-  ];
 
   const openModal = (serviceId: number) => {
     setSelectedService(serviceId);
@@ -139,7 +113,6 @@ Giveaway / aktivacije zajednice`,
               <a href="#services" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj naše usluge">Usluge</a>
               <a href="#product" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj naš proizvod">Naš proizvod</a>
               <a href="#about" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Saznaj više o nama">O nama</a>
-              <a href="#press" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj medijske članke">Mediji</a>
               <a href="#contact" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Kontaktiraj nas">Kontakt</a>
               
               {/* Social Media Icons */}
@@ -229,13 +202,6 @@ Giveaway / aktivacije zajednice`,
                 className="block text-xl font-light text-white hover:text-purple-300 transition-all duration-300 py-2"
               >
                 O nama
-              </a>
-              <a 
-                href="#press" 
-                onClick={closeMobileMenu}
-                className="block text-xl font-light text-white hover:text-purple-300 transition-all duration-300 py-2"
-              >
-                Mediji
               </a>
               <a 
                 href="#contact" 
@@ -498,65 +464,6 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
         </div>
       </section>
 
-      {/* Press/Media Section */}
-      <section id="press" className="py-24 px-6" aria-label="Medijski sadržaj">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-extralight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-400">
-              MEDIJI O NAMA
-            </h2> 
-            <p className="text-lg font-light opacity-80 max-w-3xl mx-auto mt-4 leading-relaxed">
-              
-       
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {pressArticles.map((article, index) => (
-              <a
-                key={article.id}
-               href={article.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 cursor-pointer block"
-                style={{
-                  animationDelay: `${index * 0.1}s`,
-                  transform: 'perspective(1000px) rotateX(5deg) rotateY(-2deg)'
-                }}
-              >
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={article.image}
-                    alt={`Medijski članak: ${article.title} objavljen u ${article.portal}`}
-                    className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                    loading="lazy"
-                  />
-                  <div className="absolute top-4 right-4 text-purple-300 opacity-80 group-hover:text-white transition-colors">
-                    <Newspaper className="w-6 h-6" />
-                  </div>
-                  <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1">
-                    <span className="text-xs font-light text-white/90">{article.portal}</span>
-                  </div>
-                </div>
-                
-                <div className="p-6">
-                  <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-lg font-light group-hover:text-purple-300 transition-colors leading-tight flex-1">
-                      {article.title}
-                    </h3>
-                    <ExternalLink className="w-4 h-4 text-purple-400 opacity-60 group-hover:opacity-100 transition-opacity ml-2 flex-shrink-0 mt-1" />
-                  </div>
-                  <p className="text-sm opacity-60 font-light">
-                    {article.date}
-                  </p>
-                </div>
-                
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/0 to-blue-600/0 group-hover:from-purple-600/10 group-hover:to-blue-600/10 transition-all duration-500 pointer-events-none"></div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-24 px-6" aria-label="Kontakt">
