@@ -471,7 +471,7 @@ Giveaway / aktivacije zajednice`,
                   Reiseziel Kroatien
                 </h3>
                 <p className="text-sm opacity-70 font-light leading-relaxed mb-4">
-                  Kratki opis projekta koji objašnjava što je napravljeno i kakvi su rezultati postignuti.
+                  Kuće za odmor i apartmani u Bilicama
                 </p>
                 <a 
                   href="#" 
