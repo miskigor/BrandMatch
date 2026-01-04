@@ -448,7 +448,7 @@ Giveaway / aktivacije zajednice`,
                   className="inline-flex items-center text-purple-300 hover:text-white transition-colors font-light"
                 >
                   Pogledaj projekt
-                  <ArrowRight className="ml-2 w-4 h-4" />
+                  <ArrowRight className="https://skystral.com/" />
                 </a>
               </div>
             </div>
