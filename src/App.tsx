@@ -383,6 +383,74 @@ Giveaway / aktivacije zajednice`,
       </section>
 
       {/* About Section */}
+      {/* Portfolio Section */}
+      <section id="portfolio" className="py-24 px-6" aria-label="Naš portfelj">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-extralight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-400 animate-fade-in">
+              PORTFELJ
+            </h2>
+            <p className="text-xl font-light opacity-80 max-w-2xl mx-auto">
+              Pogledajte naše najnovije projekte i uspjehe
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Projekt 1 */}
+            <div className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/placeholder-portfolio-1.jpg"
+                  alt="Projekt 1 - Opis projekta"
+                  className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              </div>
+              
+              <div className="p-6">
+                <h3 className="text-xl font-light mb-3 group-hover:text-purple-300 transition-colors">
+                  Naziv Projekta 1
+                </h3>
+                <p className="text-sm opacity-70 font-light leading-relaxed mb-4">
+                  Kratki opis projekta koji objašnjava što je napravljeno i kakvi su rezultati postignuti.
+                </p>
+                <a 
+                  href="#" 
+                  className="inline-flex items-center text-purple-300 hover:text-white transition-colors font-light"
+                >
+                  Pogledaj projekt
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Projekt 2 */}
+            <div className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/placeholder-portfolio-2.jpg"
+                  alt="Projekt 2 - Opis projekta"
+                  className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              </div>
+              
+              <div className="p-6">
+                <h3 className="text-xl font-light mb-3 group-hover:text-purple-300 transition-colors">
+                  Naziv Projekta 2
+                </h3>
+                <p className="text-sm opacity-70 font-light leading-relaxed mb-4">
+                  Kratki opis projekta koji objašnjava što je napravljeno i kakvi su rezultati postignuti.
+                </p>
+                <a 
+                  href="#" 
+                  className="inline-flex items-center text-purple-300 hover:text-white transition-colors font-light"
+                >
+                  Pogledaj projekt
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </a>
+              </div>
+            </div>
       <section id="about" className="py-24 px-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm" aria-label="O nama">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-extralight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
@@ -464,7 +532,38 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
         </div>
       </section>
 
+            {/* Projekt 3 */}
+            <div className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/placeholder-portfolio-3.jpg"
+                  alt="Projekt 3 - Opis projekta"
+                  className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              </div>
+              
+              <div className="p-6">
+                <h3 className="text-xl font-light mb-3 group-hover:text-purple-300 transition-colors">
+                  Naziv Projekta 3
+                </h3>
+                <p className="text-sm opacity-70 font-light leading-relaxed mb-4">
+                  Kratki opis projekta koji objašnjava što je napravljeno i kakvi su rezultati postignuti.
+                </p>
+                <a 
+                  href="#" 
+                  className="inline-flex items-center text-purple-300 hover:text-white transition-colors font-light"
+                >
+                  Pogledaj projekt
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      {/* About Section */}
       {/* Contact Section */}
       <section id="contact" className="py-24 px-6" aria-label="Kontakt">
         <div className="max-w-4xl mx-auto text-center">
