@@ -370,7 +370,7 @@ Giveaway / aktivacije zajednice`,
             {/* Link */}
             <div>
               <a 
-               href="https://brandmatchonline.com/" 
+                href="https://brandmatchonline.com/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 px-8 py-4 rounded-full font-light text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25"
