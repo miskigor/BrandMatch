@@ -354,7 +354,7 @@ Giveaway / aktivacije zajednice`,
             {/* Slika */}
             <div className="mb-8">
               <img 
-                src="/Slika zaslona 2025-11-14 u 18.26.20.png" 
+                src="/slika_zaslona_2026-01-04_u_09.05.55.png" 
                 alt="Moderan Sistem za Salone - Online booking, upravljanje terminima, statistika" 
                 className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl"
               />
@@ -383,7 +383,6 @@ Giveaway / aktivacije zajednice`,
         </div>
       </section>
 
-      {/* About Section */}
       {/* Portfolio Section */}
       <section id="portfolio" className="py-24 px-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm" aria-label="Naš portfelj">
         <div className="max-w-7xl mx-auto">
@@ -453,8 +452,38 @@ Giveaway / aktivacije zajednice`,
               </div>
             </div>
 
+            {/* Projekt 3 */}
+            <div className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/placeholder-portfolio-3.jpg"
+                  alt="Projekt 3 - Opis projekta"
+                  className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              </div>
+              
+              <div className="p-6">
+                <h3 className="text-xl font-light mb-3 group-hover:text-purple-300 transition-colors">
+                  Naziv Projekta 3
+                </h3>
+                <p className="text-sm opacity-70 font-light leading-relaxed mb-4">
+                  Kratki opis projekta koji objašnjava što je napravljeno i kakvi su rezultati postignuti.
+                </p>
+                <a 
+                  href="#" 
+                  className="inline-flex items-center text-purple-300 hover:text-white transition-colors font-light"
+                >
+                  Pogledaj projekt
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* About Section */}
-      <section id="about" className="py-24 px-6" aria-label="O nama">
+      <section id="about" className="py-24 px-6 bg-gradient-to-r from-slate-900/50 to-slate-800/50 backdrop-blur-sm" aria-label="O nama">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-extralight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
             O nama
@@ -535,38 +564,6 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
         </div>
       </section>
 
-            {/* Projekt 3 */}
-            <div className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
-              <div className="relative overflow-hidden">
-                <img 
-                  src="/placeholder-portfolio-3.jpg"
-                  alt="Projekt 3 - Opis projekta"
-                  className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-              </div>
-              
-              <div className="p-6">
-                <h3 className="text-xl font-light mb-3 group-hover:text-purple-300 transition-colors">
-                  Naziv Projekta 3
-                </h3>
-                <p className="text-sm opacity-70 font-light leading-relaxed mb-4">
-                  Kratki opis projekta koji objašnjava što je napravljeno i kakvi su rezultati postignuti.
-                </p>
-                <a 
-                  href="#" 
-                  className="inline-flex items-center text-purple-300 hover:text-white transition-colors font-light"
-                >
-                  Pogledaj projekt
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
       {/* Contact Section */}
       <section id="contact" className="py-24 px-6" aria-label="Kontakt">
         <div className="max-w-4xl mx-auto text-center">
