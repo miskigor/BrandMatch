@@ -415,7 +415,9 @@ Giveaway / aktivacije zajednice`,
                   Football Skills • Content Creator • TikTok & Instagram
                 </p>
                 <a 
-                  href="#" 
+                  href="https://vladimirilic.bar/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center text-purple-300 hover:text-white transition-colors font-light"
                 >
                   Pogledaj projekt
