@@ -354,7 +354,7 @@ Giveaway / aktivacije zajednice`,
             {/* Slika */}
             <div className="mb-8">
               <img 
-                src="/slika_zaslona_2026-01-04_u_09.05.55.png" 
+                src="/Slika zaslona 2025-11-14 u 18.26.20.png" 
                 alt="Moderan Sistem za Salone - Online booking, upravljanje terminima, statistika" 
                 className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl"
               />
