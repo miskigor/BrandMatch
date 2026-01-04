@@ -444,11 +444,13 @@ Giveaway / aktivacije zajednice`,
 
                 </p>
                 <a 
-                  href="#" 
+                  href="https://skystral.com/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center text-purple-300 hover:text-white transition-colors font-light"
                 >
                   Pogledaj projekt
-                  <ArrowRight className="https://skystral.com/" />
+                  <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </div>
             </div>
