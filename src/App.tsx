@@ -437,7 +437,7 @@ Giveaway / aktivacije zajednice`,
               
               <div className="p-6">
                 <h3 className="text-xl font-light mb-3 group-hover:text-purple-300 transition-colors">
-                  SKYSTRAL
+                  SKYSTRAL MARKETING
                 </h3>
                 <p className="text-sm opacity-70 font-light leading-relaxed mb-4">
                   Osnažujemo brendove s marketinškim rješenjima temeljenima na podacima
