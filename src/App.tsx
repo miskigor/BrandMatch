@@ -428,8 +428,8 @@ Giveaway / aktivacije zajednice`,
             <div className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
               <div className="relative overflow-hidden">
                 <img 
-                  src="/placeholder-portfolio-2.jpg"
-                  alt="Projekt 2 - Opis projekta"
+                  src="/Slika zaslona 2025-11-14 u 18.26.20.png"
+                  alt="SKYSTRAL"
                   className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
