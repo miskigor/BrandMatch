@@ -217,6 +217,13 @@ Giveaway / aktivacije zajednice`,
                 Naš proizvod
               </a>
               <a 
+                href="#portfolio" 
+                onClick={closeMobileMenu}
+                className="block text-xl font-light text-white hover:text-purple-300 transition-all duration-300 py-2"
+              >
+                Portfelj
+              </a>
+              <a 
                 href="#about" 
                 onClick={closeMobileMenu}
                 className="block text-xl font-light text-white hover:text-purple-300 transition-all duration-300 py-2"
