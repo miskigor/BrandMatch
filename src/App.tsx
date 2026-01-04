@@ -400,7 +400,7 @@ Giveaway / aktivacije zajednice`,
             <div className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
               <div className="relative overflow-hidden">
                 <img 
-                  src="/placeholder-portfolio-1.jpg"
+                  src="/public/img_7179.jpg"
                   alt="Projekt 1 - Opis projekta"
                   className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
                 />
