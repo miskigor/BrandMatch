@@ -112,6 +112,7 @@ Giveaway / aktivacije zajednice`,
               <a href="#home" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Idi na početnu stranicu">Početna</a>
               <a href="#services" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj naše usluge">Usluge</a>
               <a href="#product" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj naš proizvod">Naš proizvod</a>
+              <a href="#portfolio" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Pogledaj naš portfelj">Portfelj</a>
               <a href="#about" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Saznaj više o nama">O nama</a>
               <a href="#contact" className="text-white hover:text-purple-300 transition-all duration-300" aria-label="Kontaktiraj nas">Kontakt</a>
               
@@ -384,7 +385,7 @@ Giveaway / aktivacije zajednice`,
 
       {/* About Section */}
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-24 px-6" aria-label="Naš portfelj">
+      <section id="portfolio" className="py-24 px-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm" aria-label="Naš portfelj">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-extralight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-400 animate-fade-in">
@@ -451,7 +452,9 @@ Giveaway / aktivacije zajednice`,
                 </a>
               </div>
             </div>
-      <section id="about" className="py-24 px-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm" aria-label="O nama">
+
+      {/* About Section */}
+      <section id="about" className="py-24 px-6" aria-label="O nama">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-extralight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
             O nama
