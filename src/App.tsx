@@ -400,7 +400,7 @@ Giveaway / aktivacije zajednice`,
             <div className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
               <div className="relative overflow-hidden">
                 <img 
-                  src="/public/img_7179.jpg"
+                  src="/img_7179.jpg"
                   alt="Projekt 1 - Opis projekta"
                   className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -430,7 +430,7 @@ Giveaway / aktivacije zajednice`,
             <div className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
               <div className="relative overflow-hidden">
                 <img 
-                  src="public/lux.png"
+                  src="/lux.png"
                   alt="SKYSTRAL"
                   className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -461,7 +461,7 @@ Giveaway / aktivacije zajednice`,
             <div className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
               <div className="relative overflow-hidden">
                 <img 
-                  src="public/2ac326da-c6a2-4294-b304-129379b9f0ac.jpeg"
+                  src="/2ac326da-c6a2-4294-b304-129379b9f0ac.jpeg"
                   alt="Projekt 3 - Opis projekta"
                   className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
                 />
