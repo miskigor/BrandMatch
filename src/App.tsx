@@ -535,7 +535,7 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
                 <h4 className="text-xl font-light text-center mb-4 text-purple-300">MM.Mia</h4>
                 <div className="flex justify-center space-x-6">
                   <a 
-                    href="https://instagram.com/mm.mia1" 
+                    href="https://www.instagram.com/mm.mia1/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 bg-white/10 hover:bg-purple-500/20 rounded-full transition-all duration-300 hover:scale-125"
@@ -548,6 +548,7 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 bg-white/10 hover:bg-blue-500/20 rounded-full transition-all duration-300 hover:scale-125"
+                    aria-label="Posjetite MM.Mia Facebook profil"
                   >
                     <Facebook className="w-6 h-6 text-blue-400 hover:text-white transition-colors" />
                   </a>
@@ -556,6 +557,7 @@ Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 bg-white/10 hover:bg-pink-500/20 rounded-full transition-all duration-300 hover:scale-125"
+                    aria-label="Posjetite MM.Mia TikTok profil"
                   >
                     <div className="w-6 h-6 text-pink-400 hover:text-white transition-colors font-bold text-sm flex items-center justify-center">
                       TT
