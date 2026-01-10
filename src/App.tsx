@@ -123,7 +123,7 @@ Giveaway / aktivacije zajednice`,
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white hover:text-purple-300 transition-all duration-300 hover:scale-110"
-                  title="Instagram"
+                  aria-label="Posjetite BrandMatch Instagram profil"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
@@ -132,7 +132,7 @@ Giveaway / aktivacije zajednice`,
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white hover:text-purple-300 transition-all duration-300 hover:scale-110"
-                  title="Facebook"
+                  aria-label="Posjetite BrandMatch Facebook profil"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
