@@ -318,11 +318,14 @@ Giveaway / aktivacije zajednice`,
             
             <div className="glass-effect border border-white/10 rounded-3xl p-8 md:p-12 text-center">
               <div className="mb-12">
-                <img 
-                  src="/Slika zaslona 2025-11-14 u 18.26.20.png" 
-                  alt="Moderan Sistem za Salone" 
-                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
-                />
+                <div className="relative border-2 border-white/20 rounded-2xl p-2 max-w-4xl mx-auto">
+                  <img
+                    src="/Slika zaslona 2025-11-14 u 18.26.20.png"
+                    alt="Moderan Sistem za Salone"
+                    className="w-full rounded-xl shadow-2xl"
+                  />
+                  <div className="absolute inset-0 bg-purple-500/20 rounded-2xl pointer-events-none"></div>
+                </div>
               </div>
               
               <a 
