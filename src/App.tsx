@@ -383,7 +383,7 @@ Giveaway / aktivacije zajednice`,
                     <img 
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 filter blur-sm group-hover:blur-none"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                     <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-xs font-medium">
