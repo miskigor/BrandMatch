@@ -247,7 +247,7 @@ Giveaway / aktivacije zajednice`,
 
         {/* Section Divider */}
         <div className="max-w-7xl mx-auto px-6">
-          <div className="h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent"></div>
+          <div className="h-[2px] bg-gradient-to-r from-transparent via-purple-500/60 to-transparent"></div>
         </div>
 
         {/* Services Section */}
@@ -309,7 +309,7 @@ Giveaway / aktivacije zajednice`,
 
         {/* Section Divider */}
         <div className="max-w-7xl mx-auto px-6">
-          <div className="h-px bg-gradient-to-r from-transparent via-pink-500/30 to-transparent"></div>
+          <div className="h-[2px] bg-gradient-to-r from-transparent via-pink-500/60 to-transparent"></div>
         </div>
 
         {/* Product Section */}
@@ -350,7 +350,7 @@ Giveaway / aktivacije zajednice`,
 
         {/* Section Divider */}
         <div className="max-w-7xl mx-auto px-6">
-          <div className="h-px bg-gradient-to-r from-transparent via-orange-500/30 to-transparent"></div>
+          <div className="h-[2px] bg-gradient-to-r from-transparent via-orange-500/60 to-transparent"></div>
         </div>
 
         {/* Portfolio Section */}
@@ -415,7 +415,7 @@ Giveaway / aktivacije zajednice`,
 
         {/* Section Divider */}
         <div className="max-w-7xl mx-auto px-6">
-          <div className="h-px bg-gradient-to-r from-transparent via-red-500/30 to-transparent"></div>
+          <div className="h-[2px] bg-gradient-to-r from-transparent via-red-500/60 to-transparent"></div>
         </div>
 
         {/* About Section */}
@@ -498,7 +498,7 @@ Giveaway / aktivacije zajednice`,
 
         {/* Section Divider */}
         <div className="max-w-7xl mx-auto px-6">
-          <div className="h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent"></div>
+          <div className="h-[2px] bg-gradient-to-r from-transparent via-blue-500/60 to-transparent"></div>
         </div>
 
         {/* Contact Section */}
