@@ -311,11 +311,6 @@ Giveaway / aktivacije zajednice`,
         <section id="product" className="py-24 px-6 relative">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-red-500/20 mb-6">
-                <Zap className="w-4 h-4 text-purple-400" />
-                <span className="text-sm font-light text-purple-400">NAŠ PROIZVOD</span>
-              </div>
-              
               <h2 className="text-5xl md:text-6xl font-thin mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Naš proizvod
               </h2>
