@@ -226,19 +226,19 @@ Giveaway / aktivacije zajednice`,
             </p>
             
             <div className="text-center">
-              <div className="relative p-8 rounded-3xl border-2 border-purple-200 bg-white/60 backdrop-blur-sm shadow-xl">
+              <div className="relative p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl border-2 border-purple-200 bg-white/60 backdrop-blur-sm shadow-xl">
                 <div className="relative z-10">
-                  <p className="text-xl sm:text-2xl md:text-3xl font-extralight mb-8 text-gray-800 max-w-2xl mx-auto leading-relaxed">
+                  <p className="text-base sm:text-xl md:text-2xl lg:text-3xl font-extralight mb-6 sm:mb-8 text-gray-800 max-w-2xl mx-auto leading-relaxed">
                     Spremni ste pokrenuti svoj brand na sljedeću razinu?
                   </p>
 
                   <a
                     href="mailto:info@adoresfsh.com?subject=Upit za suradnju&body=Pozdrav,%0D%0A%0D%0AŽelim saznati više o vašim uslugama.%0D%0A%0D%0ASrdačan pozdrav"
-                    className="btn-primary group inline-flex items-center"
+                    className="btn-primary group inline-flex items-center text-sm sm:text-base"
                   >
-                    <Mail className="mr-3 w-6 h-6" />
+                    <Mail className="mr-2 sm:mr-3 w-4 h-4 sm:w-6 sm:h-6" />
                     Pošalji upit
-                    <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-2 sm:ml-3 w-4 h-4 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>
               </div>
