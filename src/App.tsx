@@ -239,7 +239,7 @@ Giveaway / aktivacije zajednice`,
             </p>
             
             <div className="text-center">
-              <p className="text-xl sm:text-2xl md:text-3xl font-light mb-8 text-gray-300 max-w-2xl mx-auto leading-relaxed">
+              <div className="animated-border-box border-2">
                 Spremni ste pokrenuti svoj brand na sljedeću razinu?
               </p>
               
