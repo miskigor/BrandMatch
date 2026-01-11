@@ -212,7 +212,7 @@ Giveaway / aktivacije zajednice`,
           </div>
 
           <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-black mb-6 leading-tight">
               <span
                 className="block bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 bg-clip-text text-transparent animate-gradient font-extralight"
                 style={{ WebkitTextStroke: '0.5px rgba(139, 92, 246, 0.3)', paintOrder: 'stroke fill' }}
@@ -221,7 +221,7 @@ Giveaway / aktivacije zajednice`,
               </span>
             </h1>
 
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mb-12 text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-xl md:text-2xl lg:text-3xl font-light mb-12 text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Kod pretvaramo u <span className="text-purple-600 font-medium">uspjeh</span>
             </p>
             
@@ -261,11 +261,11 @@ Giveaway / aktivacije zajednice`,
         <section id="services" className="py-24 px-6 relative">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-thin mb-6 text-gray-800">
+              <h2 className="text-3xl md:text-6xl font-thin mb-6 text-gray-800">
                 Što možemo učiniti za vas
               </h2>
 
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto font-light">
+              <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto font-light">
                 Spoj kreativnosti i tehnologije za brendove koji žele ostati zapamćeni
               </p>
             </div>
@@ -291,7 +291,7 @@ Giveaway / aktivacije zajednice`,
                   </div>
 
                   <div className="p-8 bg-white/50">
-                    <h3 className="text-2xl font-light mb-4 text-gray-800 group-hover:text-purple-600 transition-colors">
+                    <h3 className="text-lg md:text-2xl font-light mb-4 text-gray-800 group-hover:text-purple-600 transition-colors">
                       {service.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
@@ -318,7 +318,7 @@ Giveaway / aktivacije zajednice`,
         <section id="product" className="py-24 px-6 relative">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-5xl md:text-6xl font-thin mb-4 text-gray-800">
+              <h2 className="text-3xl md:text-6xl font-thin mb-4 text-gray-800">
                 Naš proizvod
               </h2>
             </div>
@@ -357,11 +357,11 @@ Giveaway / aktivacije zajednice`,
         <section id="portfolio" className="py-24 px-6 relative">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-5xl md:text-6xl font-thin mb-6 text-gray-800">
+              <h2 className="text-3xl md:text-6xl font-thin mb-6 text-gray-800">
                 Naši projekti
               </h2>
 
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto font-light">
+              <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto font-light">
                 Pogledajte naše najnovije projekte i uspjehe
               </p>
             </div>
@@ -387,7 +387,7 @@ Giveaway / aktivacije zajednice`,
                   </div>
 
                   <div className="p-6 bg-white/50">
-                    <h3 className="text-xl font-light mb-3 text-gray-800 group-hover:text-purple-600 transition-colors">
+                    <h3 className="text-base md:text-xl font-light mb-3 text-gray-800 group-hover:text-purple-600 transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-gray-600 text-sm mb-4 leading-relaxed">
@@ -418,14 +418,14 @@ Giveaway / aktivacije zajednice`,
         <section id="about" className="py-24 px-6 relative">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-5xl md:text-6xl font-thin mb-8 text-gray-800">
+              <h2 className="text-3xl md:text-6xl font-thin mb-8 text-gray-800">
                 O nama
               </h2>
             </div>
 
             <div className="glass-effect border-2 border-gray-200 rounded-3xl p-8 md:p-12 shadow-xl">
               <div className="text-center mb-8">
-                <h3 className="text-3xl font-light mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                <h3 className="text-xl md:text-3xl font-light mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                   Obrt ADORES.FSH
                 </h3>
               </div>
@@ -460,7 +460,7 @@ Naš cilj je jednostavan: pretvoriti ideje u funkcionalne digitalne proizvode ko
               </div>
               
               <div className="text-center">
-                <h4 className="text-lg sm:text-xl font-light text-center mb-6 text-purple-600">MM.Mia</h4>
+                <h4 className="text-base sm:text-xl font-light text-center mb-6 text-purple-600">MM.Mia</h4>
                 <div className="flex justify-center space-x-4">
                   <a
                     href="https://www.instagram.com/mm.mia1/"
@@ -506,13 +506,13 @@ Naš cilj je jednostavan: pretvoriti ideje u funkcionalne digitalne proizvode ko
         <section id="contact" className="py-24 px-6 relative">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-thin mb-8 text-gray-800">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-thin mb-8 text-gray-800">
                 Kontaktirajte nas
               </h2>
             </div>
 
             <div className="glass-effect border-2 border-gray-200 rounded-3xl p-8 md:p-12 shadow-xl">
-              <p className="text-lg sm:text-xl md:text-2xl font-extralight mb-12 text-gray-700 leading-relaxed">
+              <p className="text-base sm:text-xl md:text-2xl font-extralight mb-12 text-gray-700 leading-relaxed">
                 Spremni ste pokrenuti svoj brand na sljedeću razinu?
               </p>
 
@@ -570,7 +570,7 @@ Naš cilj je jednostavan: pretvoriti ideje u funkcionalne digitalne proizvode ko
                 <div className={`p-3 rounded-full bg-gradient-to-r ${selectedServiceData.gradient} text-white shadow-lg`}>
                   {selectedServiceData.icon}
                 </div>
-                <h3 id="modal-title" className="text-3xl md:text-4xl font-bold text-gray-800">
+                <h3 id="modal-title" className="text-xl md:text-4xl font-bold text-gray-800">
                   {selectedServiceData.title}
                 </h3>
               </div>
