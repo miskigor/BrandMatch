@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Instagram, Facebook, Menu, Sparkles, Zap } from 'lucide-react';
+import { ArrowRight, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Instagram, Facebook, Menu, Sparkles, Zap } from 'lucide-react';
 
 function App() {
   const [selectedService, setSelectedService] = React.useState<number | null>(null);
@@ -361,17 +361,18 @@ Giveaway / aktivacije zajednice`,
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {portfolioItems.map((item, index) => (
-                <div 
+                <div
                   key={index}
-                  className="group portfolio-card glass-effect border border-white/10 rounded-3xl overflow-hidden hover:border-orange-500/30 transition-all duration-300"
+                  className="group portfolio-card glass-effect border-2 border-white/20 rounded-3xl overflow-hidden hover:border-orange-500/30 transition-all duration-300"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="relative h-48 overflow-hidden">
-                    <img 
+                    <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
+                    <div className="absolute inset-0 bg-purple-500/20"></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                     <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-xs font-medium">
                       {item.category}
@@ -409,12 +410,7 @@ Giveaway / aktivacije zajednice`,
         {/* About Section */}
         <section id="about" className="py-24 px-6 relative">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-orange-500/20 mb-6">
-                <Users className="w-4 h-4 text-purple-400" />
-                <span className="text-sm font-light text-purple-400">O NAMA</span>
-              </div>
-              
+            <div className="text-center mb-8">
               <h2 className="text-5xl md:text-6xl font-thin mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 O nama
               </h2>
