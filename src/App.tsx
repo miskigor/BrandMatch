@@ -488,12 +488,7 @@ Giveaway / aktivacije zajednice`,
         {/* Contact Section */}
         <section id="contact" className="py-24 px-6 relative">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-purple-500/20 mb-6">
-                <Mail className="w-4 h-4 text-purple-400" />
-                <span className="text-sm font-light text-purple-400">KONTAKT</span>
-              </div>
-              
+            <div className="mb-8">
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-thin mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Kontaktirajte nas
               </h2>
