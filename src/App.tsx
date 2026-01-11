@@ -117,7 +117,7 @@ Giveaway / aktivacije zajednice`,
 
       {/* Navigation */}
       <header className="relative z-40">
-        <nav className="fixed top-0 w-full backdrop-blur-xl bg-white/70 border-b border-gray-200 shadow-sm" role="navigation">
+        <nav className="fixed top-0 w-full backdrop-blur-xl bg-white/70 border-b border-gray-200 shadow-sm" role="navigation" aria-label="Glavna navigacija">
           <div className="max-w-7xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
@@ -140,6 +140,7 @@ Giveaway / aktivacije zajednice`,
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-icon hover:bg-purple-100"
+                    aria-label="Instagram profil BrandMatch agencije"
                   >
                     <Instagram className="w-5 h-5" />
                   </a>
@@ -148,15 +149,18 @@ Giveaway / aktivacije zajednice`,
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-icon hover:bg-blue-100"
+                    aria-label="Facebook stranica BrandMatch agencije"
                   >
                     <Facebook className="w-5 h-5" />
                   </a>
                 </div>
               </div>
-              
+
               <button
                 onClick={toggleMobileMenu}
                 className="md:hidden p-2 rounded-lg glass-effect hover:bg-purple-100 transition-all"
+                aria-label="Otvori mobilni meni"
+                aria-expanded={isMobileMenuOpen}
               >
                 <Menu className="w-6 h-6 text-gray-700" />
               </button>
@@ -166,19 +170,19 @@ Giveaway / aktivacije zajednice`,
       </header>
 
       {/* Mobile Menu */}
-      <div className={`fixed inset-0 z-50 transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
+      <div className={`fixed inset-0 z-50 transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`} role="dialog" aria-modal="true" aria-label="Mobilni meni">
         <div className="absolute inset-0 bg-gray-900/50 backdrop-blur-sm" onClick={closeMobileMenu}></div>
         <div className="absolute right-0 top-0 h-full w-80 glass-effect border-l border-gray-200">
           <div className="flex items-center justify-between p-6 border-b border-gray-200">
             <div className="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
               ADORES.FSH
             </div>
-            <button onClick={closeMobileMenu} className="p-2 hover:bg-purple-100 rounded-lg transition-colors">
+            <button onClick={closeMobileMenu} className="p-2 hover:bg-purple-100 rounded-lg transition-colors" aria-label="Zatvori mobilni meni">
               <X className="w-6 h-6 text-gray-700" />
             </button>
           </div>
 
-          <nav className="p-6 space-y-6">
+          <nav className="p-6 space-y-6" aria-label="Mobilna navigacija">
             {['Početna', 'Usluge', 'Proizvod', 'Portfelj', 'O nama', 'Kontakt'].map((item, index) => (
               <a
                 key={item}
@@ -458,27 +462,30 @@ Naš cilj je jednostavan: pretvoriti ideje u funkcionalne digitalne proizvode ko
               <div className="text-center">
                 <h4 className="text-lg sm:text-xl font-light text-center mb-6 text-purple-600">MM.Mia</h4>
                 <div className="flex justify-center space-x-4">
-                  <a 
-                    href="https://www.instagram.com/mm.mia1/" 
-                    target="_blank" 
+                  <a
+                    href="https://www.instagram.com/mm.mia1/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="social-icon-large bg-gradient-to-r from-purple-500 to-pink-500"
+                    aria-label="Instagram profil Mia Miškulin"
                   >
                     <Instagram className="w-6 h-6" />
                   </a>
-                  <a 
-                    href="https://www.facebook.com/mm.miablogger" 
-                    target="_blank" 
+                  <a
+                    href="https://www.facebook.com/mm.miablogger"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="social-icon-large bg-gradient-to-r from-blue-500 to-purple-500"
+                    aria-label="Facebook stranica Mia Miškulin"
                   >
                     <Facebook className="w-6 h-6" />
                   </a>
-                  <a 
-                    href="https://www.tiktok.com/@_mm.mia" 
-                    target="_blank" 
+                  <a
+                    href="https://www.tiktok.com/@_mm.mia"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="social-icon-large bg-gradient-to-r from-pink-500 to-purple-500"
+                    aria-label="TikTok profil Mia Miškulin"
                   >
                     <div className="w-6 h-6 font-bold text-sm flex items-center justify-center">
                       TT
@@ -542,11 +549,12 @@ Naš cilj je jednostavan: pretvoriti ideje u funkcionalne digitalne proizvode ko
 
       {/* Modal */}
       {selectedService && selectedServiceData && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-gray-900/50 backdrop-blur-sm">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-gray-900/50 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="modal-title">
           <div className="relative max-w-4xl w-full max-h-[90vh] glass-effect border-2 border-gray-200 rounded-3xl overflow-hidden shadow-2xl">
             <button
               onClick={closeModal}
               className="absolute top-6 right-6 z-10 p-3 bg-white/90 hover:bg-white rounded-full transition-colors shadow-lg"
+              aria-label="Zatvori modal"
             >
               <X className="w-6 h-6 text-gray-700" />
             </button>
@@ -554,7 +562,7 @@ Naš cilj je jednostavan: pretvoriti ideje u funkcionalne digitalne proizvode ko
             <div className="relative h-64 md:h-80">
               <img
                 src={selectedServiceData.image}
-                alt={selectedServiceData.title}
+                alt={`${selectedServiceData.title} - vizualni prikaz usluge`}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-white via-white/30 to-transparent"></div>
@@ -562,7 +570,7 @@ Naš cilj je jednostavan: pretvoriti ideje u funkcionalne digitalne proizvode ko
                 <div className={`p-3 rounded-full bg-gradient-to-r ${selectedServiceData.gradient} text-white shadow-lg`}>
                   {selectedServiceData.icon}
                 </div>
-                <h3 className="text-3xl md:text-4xl font-bold text-gray-800">
+                <h3 id="modal-title" className="text-3xl md:text-4xl font-bold text-gray-800">
                   {selectedServiceData.title}
                 </h3>
               </div>

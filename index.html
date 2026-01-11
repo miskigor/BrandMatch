@@ -35,11 +35,23 @@
     <meta property="twitter:site" content="@brandmatch1" />
     
     <!-- Additional SEO Meta Tags -->
-    <meta name="theme-color" content="#1e293b" />
-    <meta name="msapplication-TileColor" content="#1e293b" />
+    <meta name="theme-color" content="#9333ea" />
+    <meta name="msapplication-TileColor" content="#9333ea" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="ADORES.FSH" />
+
+    <!-- Geo Tags for Local SEO -->
+    <meta name="geo.region" content="HR-16" />
+    <meta name="geo.placename" content="Ilok" />
+    <meta name="geo.position" content="45.221111;19.376944" />
+    <meta name="ICBM" content="45.221111, 19.376944" />
+
+    <!-- Business Tags -->
+    <meta name="business:contact_data:street_address" content="Dr. Franje Tuđmana 27A" />
+    <meta name="business:contact_data:locality" content="Ilok" />
+    <meta name="business:contact_data:postal_code" content="32236" />
+    <meta name="business:contact_data:country_name" content="Hrvatska" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://brandmatch-marketing-pgqi.bolt.host/" />
@@ -55,6 +67,11 @@
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/andras-vas-Bd7gNnWJBkU-unsplash copy copy copy copy copy.jpg" as="image" type="image/jpeg" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" />
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -117,6 +134,111 @@
           "description": "Funkcionalne aplikacije optimizirane za korisničko iskustvo"
         }
       ]
+    }
+    </script>
+
+    <!-- LocalBusiness Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ADORES.FSH",
+      "image": "https://brandmatch-marketing-pgqi.bolt.host/andras-vas-Bd7gNnWJBkU-unsplash.jpg",
+      "priceRange": "$$",
+      "@id": "https://brandmatch-marketing-pgqi.bolt.host",
+      "url": "https://brandmatch-marketing-pgqi.bolt.host",
+      "telephone": "+385-XX-XXX-XXXX",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dr. Franje Tuđmana 27A",
+        "addressLocality": "Ilok",
+        "postalCode": "32236",
+        "addressCountry": "HR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.221111,
+        "longitude": 19.376944
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/brandmatch1/",
+        "https://www.facebook.com/profile.php?id=61574606981810",
+        "https://www.instagram.com/mm.mia1/"
+      ]
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Koje usluge nudi ADORES.FSH?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ADORES.FSH nudi vođenje društvenih mreža, izradu web stranica, razvoj mobilnih aplikacija i suradnju na društvenim mrežama. Specijalizirani smo za kreiranje modernih digitalnih rješenja koja pomažu brendovima da se istaknu u digitalnom prostoru."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Gdje se nalazi ADORES.FSH?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Naša agencija se nalazi na adresi Dr. Franje Tuđmana 27A, Ilok, 32236, Hrvatska."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Tko je vlasnica ADORES.FSH?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vlasnica i osnivačica ADORES.FSH je Mia Miškulin (MM.Mia), poznata i kao content creator na društvenim mrežama."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kako mogu kontaktirati ADORES.FSH?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Možete nas kontaktirati putem emaila na info@adoresfsh.com ili pratiti naše društvene mreže na Instagramu (@brandmatch1) i Facebooku."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- WebSite Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ADORES.FSH - BrandMatch Marketing Agencija",
+      "url": "https://brandmatch-marketing-pgqi.bolt.host",
+      "description": "Profesionalna marketing agencija koja pruža usluge vođenja društvenih mreža, izrade web stranica i razvoja mobilnih aplikacija",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ADORES.FSH"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://brandmatch-marketing-pgqi.bolt.host/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
     </script>
   </head>
