@@ -221,7 +221,7 @@ Giveaway / aktivacije zajednice`,
             <div className="text-center">
               <div className="relative p-8 rounded-3xl border-4 border-purple-500/60 bg-gradient-to-r from-purple-500/10 via-blue-500/10 to-pink-500/10 backdrop-blur-sm">
                 <div className="relative z-10">
-                  <p className="text-xl sm:text-2xl md:text-3xl font-extralight mb-8 text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                  <p className="text-xl sm:text-2xl md:text-3xl font-extralight mb-8 text-white max-w-2xl mx-auto leading-relaxed">
                     Spremni ste pokrenuti svoj brand na sljedeću razinu?
                   </p>
                   
