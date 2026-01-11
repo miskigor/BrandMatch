@@ -265,9 +265,9 @@ Giveaway / aktivacije zajednice`,
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {services.map((service, index) => (
-                <div 
+                <div
                   key={service.id}
-                  className="group service-card glass-effect border border-white/10 rounded-3xl overflow-hidden cursor-pointer"
+                  className="group service-card glass-effect border border-white/30 rounded-3xl overflow-hidden cursor-pointer hover:border-purple-400/50 transition-all duration-300"
                   onClick={() => openModal(service.id)}
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
