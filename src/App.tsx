@@ -421,11 +421,8 @@ Giveaway / aktivacije zajednice`,
                 <h3 className="text-3xl font-light mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   Obrt ADORES.FSH
                 </h3>
-                <p className="text-lg sm:text-xl text-gray-300 font-light">
-                  Vlasnica: <span className="text-purple-400 font-medium">Mia Miškulin</span>
-                </p>
               </div>
-              
+
               <div className="bg-gradient-to-r from-purple-900/40 to-blue-900/40 rounded-2xl p-8 mb-8 border border-purple-500/20">
                 <h4 className="text-lg sm:text-xl font-light text-purple-300 mb-6 text-center">O vlasnici</h4>
                 <div className="space-y-4 text-gray-300 leading-relaxed font-light">
@@ -437,7 +434,13 @@ Giveaway / aktivacije zajednice`,
                   </p>
                 </div>
               </div>
-              
+
+              <div className="text-center mb-6">
+                <p className="text-lg sm:text-xl text-gray-300 font-light">
+                  Vlasnica: <span className="text-purple-400 font-medium">Mia Miškulin</span>
+                </p>
+              </div>
+
               <div className="flex items-center justify-center mb-8">
                 <div className="flex items-center space-x-3 glass-effect px-6 py-3 rounded-full border border-white/10">
                   <Calendar className="w-5 h-5 text-purple-400" />
