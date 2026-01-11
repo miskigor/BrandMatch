@@ -511,18 +511,18 @@ Naš cilj je jednostavan: pretvoriti ideje u funkcionalne digitalne proizvode ko
               </h2>
             </div>
 
-            <div className="glass-effect border-2 border-gray-200 rounded-3xl p-8 md:p-12 shadow-xl">
-              <p className="text-base sm:text-xl md:text-2xl font-extralight mb-12 text-gray-700 leading-relaxed">
+            <div className="glass-effect border-2 border-gray-200 rounded-3xl p-6 md:p-12 shadow-xl">
+              <p className="text-sm sm:text-xl md:text-2xl font-extralight mb-8 sm:mb-12 text-gray-700 leading-relaxed">
                 Spremni ste pokrenuti svoj brand na sljedeću razinu?
               </p>
 
               <a
                 href="mailto:info@adoresfsh.com?subject=Upit za suradnju&body=Pozdrav,%0D%0A%0D%0AŽelim saznati više o vašim uslugama.%0D%0A%0D%0ASrdačan pozdrav"
-                className="btn-primary group inline-flex items-center text-lg"
+                className="btn-primary group inline-flex items-center text-sm sm:text-lg"
               >
-                <Mail className="mr-3 w-6 h-6" />
+                <Mail className="mr-2 sm:mr-3 w-5 h-5 sm:w-6 sm:h-6" />
                 Pošaljite upit
-                <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
