@@ -424,7 +424,6 @@ Giveaway / aktivacije zajednice`,
               </div>
 
               <div className="bg-gradient-to-r from-purple-900/40 to-blue-900/40 rounded-2xl p-8 mb-8 border border-purple-500/20">
-                <h4 className="text-lg sm:text-xl font-light text-purple-300 mb-6 text-center">O vlasnici</h4>
                 <div className="space-y-4 text-gray-300 leading-relaxed font-light">
                   <p>
                     Adores FSH je digitalni obrt specijaliziran za izradu modernih web stranica, web aplikacija i profesionalnih portfolija, kao i za razvoj suradnji na društvenim mrežama. Naš cilj je pomoći klijentima da se istaknu u digitalnom prostoru kroz kvalitetna, funkcionalna i vizualno privlačna rješenja.
