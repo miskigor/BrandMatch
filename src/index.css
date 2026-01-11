@@ -29,7 +29,7 @@
   height: 2px;
   bottom: -4px;
   left: 0;
-  background: linear-gradient(90deg, #fb923c, #ef4444);
+  background: linear-gradient(90deg, #fb923c, #ef4444, #ec4899);
   transition: width 0.3s ease;
 }
 
@@ -48,7 +48,7 @@
 
 /* Social icon styles */
 .social-icon {
-  @apply p-3 glass-effect border border-white/10 hover:border-orange-500/50 rounded-full transition-all duration-300 transform hover:scale-110;
+  @apply p-3 glass-effect border border-white/10 hover:border-orange-500/30 rounded-full transition-all duration-300 transform hover:scale-110;
 }
 
 .social-icon-large {
@@ -57,7 +57,7 @@
 
 /* Service card animation */
 .service-card {
-  @apply transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/20;
+  @apply transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/10;
   animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
   transform: translateY(30px);
@@ -134,16 +134,16 @@ img {
 
 /* Glow effects */
 .glow-purple {
-  box-shadow: 0 0 20px rgba(251, 146, 60, 0.4);
+  box-shadow: 0 0 20px rgba(251, 146, 60, 0.3);
 }
 
 .glow-pink {
-  box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
 }
 
 /* Text effects */
 .text-glow {
-  text-shadow: 0 0 10px rgba(251, 146, 60, 0.5);
+  text-shadow: 0 0 10px rgba(251, 146, 60, 0.3);
 }
 
 /* Hover effects */
@@ -189,7 +189,7 @@ img {
 /* Animated border effect */
 .animated-border {
   position: relative;
-  background: linear-gradient(45deg, rgba(251, 146, 60, 0.1), rgba(239, 68, 68, 0.1), rgba(236, 72, 153, 0.1));
+  background: linear-gradient(45deg, rgba(251, 146, 60, 0.08), rgba(239, 68, 68, 0.08), rgba(236, 72, 153, 0.08));
   background-size: 300% 300%;
   animation: gradient-x 3s ease infinite;
 }
@@ -199,7 +199,7 @@ img {
   position: absolute;
   inset: 0;
   padding: 2px;
-  background: linear-gradient(45deg, #fb923c, #ef4444, #ec4899, #fb923c);
+  background: linear-gradient(45deg, rgba(251, 146, 60, 0.4), rgba(239, 68, 68, 0.4), rgba(236, 72, 153, 0.4), rgba(251, 146, 60, 0.4));
   background-size: 300% 300%;
   border-radius: inherit;
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
