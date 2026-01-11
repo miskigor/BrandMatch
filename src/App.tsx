@@ -238,20 +238,18 @@ Giveaway / aktivacije zajednice`,
               Kod pretvaramo u <span className="text-emerald-400 font-semibold">uspjeh</span>
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <a 
-                href="#services" 
-                className="btn-primary group"
-              >
-                Naše usluge
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
+            <div className="text-center">
+              <p className="text-xl sm:text-2xl md:text-3xl font-light mb-8 text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                Spremni ste pokrenuti svoj brand na sljedeću razinu?
+              </p>
               
               <a 
-                href="#portfolio" 
-                className="btn-secondary"
+                href="mailto:info@adoresfsh.com?subject=Upit za suradnju&body=Pozdrav,%0D%0A%0D%0AŽelim saznati više o vašim uslugama.%0D%0A%0D%0ASrdačan pozdrav"
+                className="btn-primary group inline-flex items-center"
               >
-                Pogledaj portfelj
+                <Mail className="mr-3 w-6 h-6" />
+                Pošalji upit
+                <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
