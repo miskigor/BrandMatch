@@ -4,16 +4,6 @@ import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X
 function App() {
   const [selectedService, setSelectedService] = React.useState<number | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
-
-  React.useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
 
   const services = [
     {
@@ -124,16 +114,6 @@ Giveaway / aktivacije zajednice`,
         <div className="absolute top-1/2 -left-40 w-80 h-80 bg-red-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute -bottom-40 right-1/3 w-80 h-80 bg-pink-500/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
       </div>
-
-      {/* Mouse follower */}
-      <div 
-        className="fixed w-6 h-6 bg-gradient-to-r from-orange-400 to-red-400 rounded-full pointer-events-none z-50 mix-blend-difference transition-transform duration-150 ease-out"
-        style={{
-          left: mousePosition.x - 12,
-          top: mousePosition.y - 12,
-          transform: 'scale(0.8)'
-        }}
-      />
 
       {/* Navigation */}
       <header className="relative z-40">
