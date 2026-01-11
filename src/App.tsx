@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Instagram, Facebook, Menu, Star, Sparkles, Zap } from 'lucide-react';
+import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Instagram, Facebook, Menu, Star, Zap } from 'lucide-react';
 
 function App() {
   const [selectedService, setSelectedService] = React.useState<number | null>(null);
@@ -25,7 +25,7 @@ function App() {
 Naš tim preuzima kompletno vođenje vaših profila od kreiranja vizualno privlačnih objava i videa, do osmišljavanja kampanja i praćenja trendova koji donose rezultate.`,
       image: '/brooke-lark-W1B2LpQOBxA-unsplash.jpg',
       icon: <Share2 className="w-6 h-6" />,
-      gradient: "from-pink-500 to-rose-500"
+      gradient: "from-emerald-500 to-teal-500"
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ Naš tim preuzima kompletno vođenje vaših profila od kreiranja vizualno privla
       fullDescription: "Razvijamo moderne, brze i potpuno responsivne web stranice prilagođene vašim potrebama. Od jednostavnih landing stranica do kompleksnih webshopova s integriranim sustavima plaćanja. Koristimo najnovije tehnologije, osiguravamo SEO optimizaciju i garantiramo izvrsno korisničko iskustvo na svim uređajima.",
       image: '/domenico-loia-hGV2TfOh0ns-unsplash.jpg',
       icon: <Globe className="w-6 h-6" />,
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-cyan-500 to-emerald-500"
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ UGC sadržaj (kreiram sadržaj za vaše kanale, bez objave na mojima)
 Giveaway / aktivacije zajednice`,
       image: '/nathana-reboucas-Xfs4JHzLR-g-unsplash.jpg',
       icon: <Users className="w-6 h-6" />,
-      gradient: "from-purple-500 to-indigo-500"
+      gradient: "from-teal-500 to-cyan-500"
     },
     {
       id: 4,
@@ -62,7 +62,7 @@ Giveaway / aktivacije zajednice`,
       fullDescription: "Kreiramo native i cross-platform mobilne aplikacije koje pružaju iznimno korisničko iskustvo. Od koncepta do objave na App Store i Google Play, vodimo vas kroz cijeli proces razvoja. Naše aplikacije su optimizirane za performanse, sigurnost i skalabilnost, s fokusom na intuitivni dizajn i funkcionalnost.",
       image: '/christina-wocintechchat-com-UTw3j_aoIKM-unsplash.jpg',
       icon: <Smartphone className="w-6 h-6" />,
-      gradient: "from-emerald-500 to-teal-500"
+      gradient: "from-emerald-500 to-cyan-500"
     }
   ];
 
@@ -117,7 +117,7 @@ Giveaway / aktivacije zajednice`,
   const selectedServiceData = services.find(service => service.id === selectedService);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 text-white overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-950 text-white overflow-x-hidden">
       {/* Animated background elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl animate-pulse"></div>
@@ -140,10 +140,8 @@ Giveaway / aktivacije zajednice`,
         <nav className="fixed top-0 w-full backdrop-blur-xl bg-black/20 border-b border-white/10" role="navigation">
           <div className="max-w-7xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
-              <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                <div className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
-                  ADORES.FSH
-                </div>
+              <div className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+                ADORES.FSH
               </div>
               
               <div className="hidden md:flex items-center space-x-8">
@@ -204,7 +202,7 @@ Giveaway / aktivacije zajednice`,
                 key={item}
                 href={`#${item.toLowerCase().replace(' ', '')}`} 
                 onClick={closeMobileMenu}
-                className="block text-xl font-medium hover:text-purple-400 transition-colors py-2"
+                className="block text-xl font-medium hover:text-emerald-400 transition-colors py-2"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {item}
@@ -224,7 +222,7 @@ Giveaway / aktivacije zajednice`,
               className="w-full h-full object-cover"
               loading="eager"
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-slate-900/60 to-black/80"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/80 via-slate-900/60 to-black/80"></div>
           </div>
           
           <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
@@ -267,16 +265,16 @@ Giveaway / aktivacije zajednice`,
         <section id="services" className="py-24 px-6 relative">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-purple-500/20 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-emerald-500/20 mb-6">
                 <Star className="w-4 h-4 text-emerald-400" />
                 <span className="text-sm font-medium text-emerald-400">NAŠE USLUGE</span>
               </div>
               
-              <h2 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Što možemo učiniti za vas
               </h2>
               
-              <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto">
                 Spoj kreativnosti i tehnologije za brendove koji žele ostati zapamćeni
               </p>
             </div>
@@ -302,7 +300,6 @@ Giveaway / aktivacije zajednice`,
                   </div>
                   
                   <div className="p-8">
-                    <h3 className="text-2xl font-bold mb-4 group-hover:text-purple-400 transition-colors">
                     <h3 className="text-2xl font-bold mb-4 group-hover:text-emerald-400 transition-colors">
                       {service.title}
                     </h3>
@@ -325,12 +322,12 @@ Giveaway / aktivacije zajednice`,
         <section id="product" className="py-24 px-6 relative">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-blue-500/20 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-cyan-500/20 mb-6">
                 <Zap className="w-4 h-4 text-cyan-400" />
                 <span className="text-sm font-medium text-cyan-400">NAŠ PROIZVOD</span>
               </div>
               
-              <h2 className="text-5xl md:text-6xl font-black mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Naš proizvod
               </h2>
             </div>
@@ -361,16 +358,16 @@ Giveaway / aktivacije zajednice`,
         <section id="portfolio" className="py-24 px-6 relative">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-pink-500/20 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-teal-500/20 mb-6">
                 <Star className="w-4 h-4 text-teal-400" />
                 <span className="text-sm font-medium text-teal-400">PORTFELJ</span>
               </div>
               
-              <h2 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Naši projekti
               </h2>
               
-              <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto">
                 Pogledajte naše najnovije projekte i uspjehe
               </p>
             </div>
@@ -379,14 +376,14 @@ Giveaway / aktivacije zajednice`,
               {portfolioItems.map((item, index) => (
                 <div 
                   key={index}
-                  className="block text-xl font-medium hover:text-emerald-400 transition-colors py-2"
+                  className="group service-card glass-effect border border-white/10 rounded-3xl overflow-hidden cursor-pointer"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="relative h-48 overflow-hidden">
                     <img 
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="w-full h-full object-cover blur-sm group-hover:blur-none group-hover:scale-110 transition-all duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                     <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-xs font-medium">
@@ -395,7 +392,6 @@ Giveaway / aktivacije zajednice`,
                   </div>
                   
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-3 group-hover:text-purple-400 transition-colors">
                     <h3 className="text-xl font-bold mb-3 group-hover:text-emerald-400 transition-colors">
                       {item.title}
                     </h3>
@@ -427,15 +423,14 @@ Giveaway / aktivacije zajednice`,
                 <span className="text-sm font-medium text-cyan-400">O NAMA</span>
               </div>
               
-              <h2 className="text-5xl md:text-6xl font-black mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 O nama
               </h2>
             </div>
             
             <div className="glass-effect border border-white/10 rounded-3xl p-8 md:p-12">
               <div className="text-center mb-8">
-                <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+                <h3 className="text-2xl sm:text-3xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
                   Obrt ADORES.FSH
                 </h3>
                 <p className="text-lg sm:text-xl text-gray-300">
@@ -443,7 +438,6 @@ Giveaway / aktivacije zajednice`,
                 </p>
               </div>
               
-              <div className="bg-gradient-to-r from-purple-900/40 to-pink-900/40 rounded-2xl p-8 mb-8 border border-purple-500/20">
               <div className="bg-gradient-to-r from-emerald-900/40 to-cyan-900/40 rounded-2xl p-8 mb-8 border border-emerald-500/20">
                 <h4 className="text-lg sm:text-xl font-bold text-emerald-300 mb-6 text-center">O vlasnici</h4>
                 <div className="space-y-4 text-gray-300 leading-relaxed">
@@ -502,7 +496,7 @@ Giveaway / aktivacije zajednice`,
         <section id="contact" className="py-24 px-6 relative">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-blue-500/20 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-cyan-500/20 mb-6">
                 <Mail className="w-4 h-4 text-cyan-400" />
                 <span className="text-sm font-medium text-cyan-400">KONTAKT</span>
               </div>
@@ -533,7 +527,6 @@ Giveaway / aktivacije zajednice`,
       {/* Footer */}
       <footer className="relative border-t border-white/10 py-12 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="text-3xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
           <div className="text-3xl font-bold mb-6 bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
             ADORES.FSH
           </div>
