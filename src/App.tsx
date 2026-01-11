@@ -183,15 +183,22 @@ Giveaway / aktivacije zajednice`,
           </div>
 
           <nav className="p-6 space-y-6" aria-label="Mobilna navigacija">
-            {['Početna', 'Usluge', 'Proizvod', 'Portfelj', 'O nama', 'Kontakt'].map((item, index) => (
+            {[
+              { label: 'Početna', href: '#home' },
+              { label: 'Usluge', href: '#services' },
+              { label: 'Proizvod', href: '#product' },
+              { label: 'Portfelj', href: '#portfolio' },
+              { label: 'O nama', href: '#about' },
+              { label: 'Kontakt', href: '#contact' }
+            ].map((item, index) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase().replace(' ', '')}`}
+                key={item.label}
+                href={item.href}
                 onClick={closeMobileMenu}
                 className="block text-xl font-medium text-gray-700 hover:text-purple-600 transition-colors py-2"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {item}
+                {item.label}
               </a>
             ))}
           </nav>
