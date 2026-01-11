@@ -310,8 +310,8 @@ Giveaway / aktivacije zajednice`,
         {/* Product Section */}
         <section id="product" className="py-24 px-6 relative">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-thin mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+            <div className="text-center mb-8">
+              <h2 className="text-5xl md:text-6xl font-thin mb-4 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Naš proizvod
               </h2>
             </div>
