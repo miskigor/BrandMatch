@@ -270,7 +270,7 @@ Giveaway / aktivacije zajednice`,
                 <span className="text-sm font-medium text-purple-400">NAŠE USLUGE</span>
               </div>
               
-              <h2 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Što možemo učiniti za vas
               </h2>
               
@@ -327,7 +327,7 @@ Giveaway / aktivacije zajednice`,
                 <span className="text-sm font-medium text-blue-400">NAŠ PROIZVOD</span>
               </div>
               
-              <h2 className="text-5xl md:text-6xl font-black mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Naš proizvod
               </h2>
             </div>
@@ -363,7 +363,7 @@ Giveaway / aktivacije zajednice`,
                 <span className="text-sm font-medium text-pink-400">PORTFELJ</span>
               </div>
               
-              <h2 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Naši projekti
               </h2>
               
@@ -433,7 +433,7 @@ Giveaway / aktivacije zajednice`,
                 <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   Obrt ADORES.FSH
                 </h3>
-                <p className="text-lg sm:text-xl text-gray-300">
+                <p className="text-xl text-gray-300">
                   Vlasnica: <span className="text-purple-400 font-semibold">Mia Miškulin</span>
                 </p>
               </div>
