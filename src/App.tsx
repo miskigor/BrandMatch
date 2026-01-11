@@ -270,7 +270,7 @@ Giveaway / aktivacije zajednice`,
                 <span className="text-sm font-medium text-purple-400">NAŠE USLUGE</span>
               </div>
               
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Što možemo učiniti za vas
               </h2>
               
@@ -327,7 +327,7 @@ Giveaway / aktivacije zajednice`,
                 <span className="text-sm font-medium text-blue-400">NAŠ PROIZVOD</span>
               </div>
               
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-5xl md:text-6xl font-black mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Naš proizvod
               </h2>
             </div>
@@ -363,7 +363,7 @@ Giveaway / aktivacije zajednice`,
                 <span className="text-sm font-medium text-pink-400">PORTFELJ</span>
               </div>
               
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Naši projekti
               </h2>
               
@@ -383,7 +383,7 @@ Giveaway / aktivacije zajednice`,
                     <img 
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 filter blur-sm group-hover:blur-none"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                     <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-xs font-medium">
@@ -423,14 +423,14 @@ Giveaway / aktivacije zajednice`,
                 <span className="text-sm font-medium text-emerald-400">O NAMA</span>
               </div>
               
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-5xl md:text-6xl font-black mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 O nama
               </h2>
             </div>
             
             <div className="glass-effect border border-white/10 rounded-3xl p-8 md:p-12">
               <div className="text-center mb-8">
-                <h3 className="text-2xl sm:text-3xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   Obrt ADORES.FSH
                 </h3>
                 <p className="text-lg sm:text-xl text-gray-300">
@@ -507,7 +507,7 @@ Giveaway / aktivacije zajednice`,
             </div>
             
             <div className="glass-effect border border-white/10 rounded-3xl p-8 md:p-12">
-              <p className="text-2xl font-light mb-12 text-gray-300 leading-relaxed">
+              <p className="text-lg sm:text-xl md:text-2xl font-light mb-12 text-gray-300 leading-relaxed">
                 Spremni ste pokrenuti svoj brand na sljedeću razinu?
               </p>
               
