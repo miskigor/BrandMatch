@@ -25,7 +25,7 @@ function App() {
 Naš tim preuzima kompletno vođenje vaših profila od kreiranja vizualno privlačnih objava i videa, do osmišljavanja kampanja i praćenja trendova koji donose rezultate.`,
       image: '/brooke-lark-W1B2LpQOBxA-unsplash.jpg',
       icon: <Share2 className="w-6 h-6" />,
-      gradient: "from-pink-500 to-rose-500"
+      gradient: "from-orange-500 to-red-500"
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ Naš tim preuzima kompletno vođenje vaših profila od kreiranja vizualno privla
       fullDescription: "Razvijamo moderne, brze i potpuno responsivne web stranice prilagođene vašim potrebama. Od jednostavnih landing stranica do kompleksnih webshopova s integriranim sustavima plaćanja. Koristimo najnovije tehnologije, osiguravamo SEO optimizaciju i garantiramo izvrsno korisničko iskustvo na svim uređajima.",
       image: '/domenico-loia-hGV2TfOh0ns-unsplash.jpg',
       icon: <Globe className="w-6 h-6" />,
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-red-500 to-pink-500"
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ UGC sadržaj (kreiram sadržaj za vaše kanale, bez objave na mojima)
 Giveaway / aktivacije zajednice`,
       image: '/nathana-reboucas-Xfs4JHzLR-g-unsplash.jpg',
       icon: <Users className="w-6 h-6" />,
-      gradient: "from-purple-500 to-indigo-500"
+      gradient: "from-pink-500 to-orange-500"
     },
     {
       id: 4,
@@ -62,7 +62,7 @@ Giveaway / aktivacije zajednice`,
       fullDescription: "Kreiramo native i cross-platform mobilne aplikacije koje pružaju iznimno korisničko iskustvo. Od koncepta do objave na App Store i Google Play, vodimo vas kroz cijeli proces razvoja. Naše aplikacije su optimizirane za performanse, sigurnost i skalabilnost, s fokusom na intuitivni dizajn i funkcionalnost.",
       image: '/christina-wocintechchat-com-UTw3j_aoIKM-unsplash.jpg',
       icon: <Smartphone className="w-6 h-6" />,
-      gradient: "from-emerald-500 to-teal-500"
+      gradient: "from-orange-500 to-pink-500"
     }
   ];
 
@@ -120,14 +120,14 @@ Giveaway / aktivacije zajednice`,
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 text-white overflow-x-hidden">
       {/* Animated background elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/2 -left-40 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute -bottom-40 right-1/3 w-80 h-80 bg-teal-500/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/2 -left-40 w-80 h-80 bg-red-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute -bottom-40 right-1/3 w-80 h-80 bg-pink-500/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
       </div>
 
       {/* Mouse follower */}
       <div 
-        className="fixed w-6 h-6 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full pointer-events-none z-50 mix-blend-difference transition-transform duration-150 ease-out"
+        className="fixed w-6 h-6 bg-gradient-to-r from-orange-400 to-red-400 rounded-full pointer-events-none z-50 mix-blend-difference transition-transform duration-150 ease-out"
         style={{
           left: mousePosition.x - 12,
           top: mousePosition.y - 12,
@@ -140,8 +140,8 @@ Giveaway / aktivacije zajednice`,
         <nav className="fixed top-0 w-full backdrop-blur-xl bg-black/20 border-b border-white/10" role="navigation">
           <div className="max-w-7xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
-              <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                <div className="text-2xl font-light bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <div className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
+                <div className="text-2xl font-light bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
                   ADORES.FSH
                 </div>
               </div>
@@ -159,7 +159,7 @@ Giveaway / aktivacije zajednice`,
                     href="https://www.instagram.com/brandmatch1/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="social-icon hover:bg-emerald-500/20"
+                    className="social-icon hover:bg-orange-500/20"
                   >
                     <Instagram className="w-5 h-5" />
                   </a>
@@ -167,7 +167,7 @@ Giveaway / aktivacije zajednice`,
                     href="https://www.facebook.com/profile.php?id=61574606981810" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="social-icon hover:bg-cyan-500/20"
+                    className="social-icon hover:bg-red-500/20"
                   >
                     <Facebook className="w-5 h-5" />
                   </a>
@@ -190,7 +190,7 @@ Giveaway / aktivacije zajednice`,
         <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={closeMobileMenu}></div>
         <div className="absolute right-0 top-0 h-full w-80 glass-effect border-l border-white/20">
           <div className="flex items-center justify-between p-6 border-b border-white/10">
-            <div className="text-xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+            <div className="text-xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
               ADORES.FSH
             </div>
             <button onClick={closeMobileMenu} className="p-2 hover:bg-white/10 rounded-lg transition-colors">
@@ -204,7 +204,7 @@ Giveaway / aktivacije zajednice`,
                 key={item}
                 href={`#${item.toLowerCase().replace(' ', '')}`} 
                 onClick={closeMobileMenu}
-                className="block text-xl font-medium hover:text-purple-400 transition-colors py-2"
+                className="block text-xl font-medium hover:text-orange-400 transition-colors py-2"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {item}
@@ -239,7 +239,7 @@ Giveaway / aktivacije zajednice`,
             </p>
             
             <div className="text-center">
-              <div className="relative p-8 rounded-3xl border-2 border-orange-500/30 bg-gradient-to-r from-orange-500/20 via-red-500/20 to-pink-500/20 backdrop-blur-sm animated-border">
+              <div className="relative p-8 rounded-3xl border-2 border-orange-500/30 bg-gradient-to-r from-orange-500/10 via-red-500/10 to-pink-500/10 backdrop-blur-sm">
                 <div className="relative z-10">
                   <p className="text-xl sm:text-2xl md:text-3xl font-extralight mb-8 text-gray-300 max-w-2xl mx-auto leading-relaxed">
                     Spremni ste pokrenuti svoj brand na sljedeću razinu?
@@ -269,7 +269,7 @@ Giveaway / aktivacije zajednice`,
         <section id="services" className="py-24 px-6 relative">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-purple-500/20 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-orange-500/20 mb-6">
                 <Star className="w-4 h-4 text-orange-400" />
                 <span className="text-sm font-light text-orange-400">NAŠE USLUGE</span>
               </div>
@@ -304,7 +304,6 @@ Giveaway / aktivacije zajednice`,
                   </div>
                   
                   <div className="p-8">
-                    <h3 className="text-2xl font-light mb-4 group-hover:text-purple-400 transition-colors">
                     <h3 className="text-2xl font-light mb-4 group-hover:text-orange-400 transition-colors">
                       {service.title}
                     </h3>
@@ -312,7 +311,6 @@ Giveaway / aktivacije zajednice`,
                       {service.description}
                     </p>
                     
-                    <div className="mt-6 flex items-center text-purple-400 font-light">
                     <div className="mt-6 flex items-center text-orange-400 font-light">
                       Saznaj više
                       <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -328,7 +326,7 @@ Giveaway / aktivacije zajednice`,
         <section id="product" className="py-24 px-6 relative">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-blue-500/20 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-red-500/20 mb-6">
                 <Zap className="w-4 h-4 text-orange-400" />
                 <span className="text-sm font-light text-orange-400">NAŠ PROIZVOD</span>
               </div>
@@ -382,7 +380,7 @@ Giveaway / aktivacije zajednice`,
               {portfolioItems.map((item, index) => (
                 <div 
                   key={index}
-                  className="group portfolio-card glass-effect border border-white/10 rounded-3xl overflow-hidden hover:border-emerald-500/30 transition-all duration-300"
+                  className="group portfolio-card glass-effect border border-white/10 rounded-3xl overflow-hidden hover:border-orange-500/30 transition-all duration-300"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="relative h-48 overflow-hidden">
@@ -398,7 +396,7 @@ Giveaway / aktivacije zajednice`,
                   </div>
                   
                   <div className="p-6">
-                    <h3 className="text-xl font-light mb-3 group-hover:text-purple-400 transition-colors">
+                    <h3 className="text-xl font-light mb-3 group-hover:text-orange-400 transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">
@@ -424,7 +422,7 @@ Giveaway / aktivacije zajednice`,
         <section id="about" className="py-24 px-6 relative">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-emerald-500/20 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-orange-500/20 mb-6">
                 <Users className="w-4 h-4 text-orange-400" />
                 <span className="text-sm font-light text-orange-400">O NAMA</span>
               </div>
@@ -436,7 +434,6 @@ Giveaway / aktivacije zajednice`,
             
             <div className="glass-effect border border-white/10 rounded-3xl p-8 md:p-12">
               <div className="text-center mb-8">
-                <h3 className="text-3xl font-light mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 <h3 className="text-3xl font-light mb-4 bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
                   Obrt ADORES.FSH
                 </h3>
@@ -445,7 +442,6 @@ Giveaway / aktivacije zajednice`,
                 </p>
               </div>
               
-              <div className="bg-gradient-to-r from-purple-900/40 to-pink-900/40 rounded-2xl p-8 mb-8 border border-purple-500/20">
               <div className="bg-gradient-to-r from-orange-900/40 to-red-900/40 rounded-2xl p-8 mb-8 border border-orange-500/20">
                 <h4 className="text-lg sm:text-xl font-light text-orange-300 mb-6 text-center">O vlasnici</h4>
                 <div className="space-y-4 text-gray-300 leading-relaxed font-light">
@@ -466,7 +462,6 @@ Giveaway / aktivacije zajednice`,
               </div>
               
               <div className="text-center">
-                <h4 className="text-lg sm:text-xl font-light text-center mb-6 text-purple-400">MM.Mia</h4>
                 <h4 className="text-lg sm:text-xl font-light text-center mb-6 text-orange-400">MM.Mia</h4>
                 <div className="flex justify-center space-x-4">
                   <a 
@@ -505,7 +500,7 @@ Giveaway / aktivacije zajednice`,
         <section id="contact" className="py-24 px-6 relative">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-blue-500/20 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-red-500/20 mb-6">
                 <Mail className="w-4 h-4 text-orange-400" />
                 <span className="text-sm font-light text-orange-400">KONTAKT</span>
               </div>
@@ -536,7 +531,6 @@ Giveaway / aktivacije zajednice`,
       {/* Footer */}
       <footer className="relative border-t border-white/10 py-12 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="text-3xl font-light mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
           <div className="text-3xl font-light mb-6 bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
             ADORES.FSH
           </div>
