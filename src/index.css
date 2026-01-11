@@ -2,22 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   font-family: 'Inter', sans-serif;
 }
 
-.perspective-1000 {
-  perspective: 1000px;
+/* Glass morphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
-.rotateX-5 {
-  transform: rotateX(5deg);
+/* Navigation styles */
+.nav-link {
+  @apply text-white/80 hover:text-white transition-all duration-300 relative font-medium;
 }
 
-.rotateX-2 {
-  transform: rotateX(2deg);
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25 inline-flex items-center;
+}
+
+.btn-secondary {
+  @apply px-8 py-4 glass-effect border border-white/20 hover:border-purple-500/50 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-white hover:text-purple-300;
+}
+
+/* Social icon styles */
+.social-icon {
+  @apply p-3 glass-effect border border-white/10 hover:border-purple-500/50 rounded-full transition-all duration-300 transform hover:scale-110 hover:bg-purple-500/20;
+}
+
+.social-icon-large {
+  @apply p-4 rounded-full transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-white;
+}
+
+/* Service card animation */
+.service-card {
+  @apply transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20;
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 /* Custom scrollbar */
@@ -30,12 +71,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #8b5cf6, #3b82f6);
+  background: linear-gradient(to bottom, #8b5cf6, #ec4899);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #7c3aed, #2563eb);
+  background: linear-gradient(to bottom, #7c3aed, #db2777);
 }
 
 /* Smooth scrolling */
@@ -62,92 +103,83 @@ img {
 }
 
 /* Animation keyframes */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
 }
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
 
-/* Glowing text effect */
-.glow-text {
-  text-shadow: 0 0 10px rgba(139, 92, 246, 0.3),
-               0 0 20px rgba(139, 92, 246, 0.2),
-               0 0 30px rgba(139, 92, 246, 0.1);
+/* Glow effects */
+.glow-purple {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
 }
 
-/* Card hover effects */
-.service-card {
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.glow-pink {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
 }
 
-.service-card:hover {
-  transform: translateY(-10px) scale(1.02);
+/* Text effects */
+.text-glow {
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
 }
 
-/* Fade-in animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+/* Loading animation */
+@keyframes pulse-glow {
+  0%, 100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
   }
 }
 
-.animate-fade-in {
-  animation: fadeIn 1.5s ease-out forwards;
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
 }
 
-/* Slower fade-in animation for contact section */
-@keyframes fadeInSlow {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+/* Backdrop blur support */
+@supports (backdrop-filter: blur(20px)) {
+  .glass-effect {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
   }
 }
 
-.animate-fade-in-slow {
-  animation: fadeInSlow 2s ease-out forwards;
-}
-
-/* Hero fade-in animation */
-@keyframes fadeInHero {
-  0% {
-    opacity: 0;
-    transform: translateY(40px) scale(0.95);
+/* Fallback for browsers without backdrop-filter */
+@supports not (backdrop-filter: blur(20px)) {
+  .glass-effect {
+    background: rgba(0, 0, 0, 0.8);
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-.animate-fade-in-hero {
-  animation: fadeInHero 1.8s ease-out forwards;
-}
-
-/* Subtitle fade-in animation */
-@keyframes fadeInSubtitle {
-  0% {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  100% {
-    opacity: 0.9;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in-subtitle {
-  animation: fadeInSubtitle 1.6s ease-out 0.5s forwards;
-  opacity: 0;
 }
