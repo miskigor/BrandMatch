@@ -427,10 +427,15 @@ Giveaway / aktivacije zajednice`,
                 <h4 className="text-lg sm:text-xl font-light text-purple-300 mb-6 text-center">O vlasnici</h4>
                 <div className="space-y-4 text-gray-300 leading-relaxed font-light">
                   <p>
-                    Ja sam Mia Miškulin — MM.Mia. Influencerica, content kreatorica i osnivačica ADORES.FSH. Rođena u Vukovaru, živim u Beču, a svoju zajednicu gradim kroz autentičan sadržaj, marketing i projekte koji donose stvarne rezultate.
+                    Adores FSH je digitalni obrt specijaliziran za izradu modernih web stranica, web aplikacija i profesionalnih portfolija, kao i za razvoj suradnji na društvenim mrežama. Naš cilj je pomoći klijentima da se istaknu u digitalnom prostoru kroz kvalitetna, funkcionalna i vizualno privlačna rješenja.
+Svaki projekt započinjemo razumijevanjem potreba klijenta i stvaranjem rješenja koje je prilagođeno njegovom poslovanju. Fokusirani smo na čistu strukturu, brzinu, responzivan dizajn i jasno korisničko iskustvo, jer vjerujemo da dobra web stranica mora biti jednako učinkovita koliko i lijepa.
+
                   </p>
                   <p>
-                    Nakon školovanja na Vienna Business School, nastavila sam obrazovanje u smjeru Marketing & Sales te paralelno razvijala karijeru na YouTubeu i drugim mrežama. 1. srpnja 2023. pokrećem vlastiti obrt ADORES.FSH i svoj brend.
+                    
+Osim izrade web rješenja, pomažemo u izgradnji online prisutnosti kroz suradnje na društvenim mrežama, osmišljavanje digitalnog sadržaja i razvoj prepoznatljivog identiteta brenda.
+Adore SFSH gradi dugoročne odnose s klijentima temeljem profesionalnosti, otvorene komunikacije i pouzdanosti u svakom koraku suradnje. Ne nudimo gotova rješenja – svaki projekt razvijamo s jasnom svrhom i mjerljivim rezultatima.
+Naš cilj je jednostavan: pretvoriti ideje u funkcionalne digitalne proizvode koji ostavljaju snažan dojam.
                   </p>
                 </div>
               </div>
