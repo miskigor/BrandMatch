@@ -245,6 +245,11 @@ Giveaway / aktivacije zajednice`,
           </div>
         </section>
 
+        {/* Section Divider */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent"></div>
+        </div>
+
         {/* Services Section */}
         <section id="services" className="py-24 px-6 relative">
           <div className="max-w-7xl mx-auto">
@@ -302,6 +307,11 @@ Giveaway / aktivacije zajednice`,
           </div>
         </section>
 
+        {/* Section Divider */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="h-px bg-gradient-to-r from-transparent via-pink-500/30 to-transparent"></div>
+        </div>
+
         {/* Product Section */}
         <section id="product" className="py-24 px-6 relative">
           <div className="max-w-6xl mx-auto">
@@ -337,6 +347,11 @@ Giveaway / aktivacije zajednice`,
             </div>
           </div>
         </section>
+
+        {/* Section Divider */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="h-px bg-gradient-to-r from-transparent via-orange-500/30 to-transparent"></div>
+        </div>
 
         {/* Portfolio Section */}
         <section id="portfolio" className="py-24 px-6 relative">
@@ -397,6 +412,11 @@ Giveaway / aktivacije zajednice`,
             </div>
           </div>
         </section>
+
+        {/* Section Divider */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="h-px bg-gradient-to-r from-transparent via-red-500/30 to-transparent"></div>
+        </div>
 
         {/* About Section */}
         <section id="about" className="py-24 px-6 relative">
@@ -475,6 +495,11 @@ Giveaway / aktivacije zajednice`,
             </div>
           </div>
         </section>
+
+        {/* Section Divider */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent"></div>
+        </div>
 
         {/* Contact Section */}
         <section id="contact" className="py-24 px-6 relative">
