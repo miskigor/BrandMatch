@@ -411,7 +411,7 @@ Giveaway / aktivacije zajednice`,
         <section id="about" className="py-24 px-6 relative">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-5xl md:text-6xl font-thin mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-5xl md:text-6xl font-thin mb-8 text-white">
                 O nama
               </h2>
             </div>
