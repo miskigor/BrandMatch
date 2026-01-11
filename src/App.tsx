@@ -254,11 +254,11 @@ Giveaway / aktivacije zajednice`,
         <section id="services" className="py-24 px-6 relative">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-thin mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-5xl md:text-6xl font-thin mb-6 text-white">
                 Što možemo učiniti za vas
               </h2>
-              
-              <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light">
+
+              <p className="text-xl text-gray-200 max-w-2xl mx-auto font-light">
                 Spoj kreativnosti i tehnologije za brendove koji žele ostati zapamćeni
               </p>
             </div>
