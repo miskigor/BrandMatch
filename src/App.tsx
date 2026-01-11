@@ -141,7 +141,7 @@ Giveaway / aktivacije zajednice`,
           <div className="max-w-7xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                <div className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+                <div className="text-2xl font-light bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   ADORES.FSH
                 </div>
               </div>
@@ -229,19 +229,19 @@ Giveaway / aktivacije zajednice`,
           
           <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black mb-6 leading-tight">
-              <span className="block bg-gradient-to-r from-emerald-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent animate-gradient">
+              <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 bg-clip-text text-transparent animate-gradient font-extralight">
                 BrandMatch
               </span>
             </h1>
             
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Kod pretvaramo u <span className="text-emerald-400 font-semibold">uspjeh</span>
+              Kod pretvaramo u <span className="text-purple-400 font-medium">uspjeh</span>
             </p>
             
             <div className="text-center">
-              <div className="relative p-8 rounded-3xl border-2 border-emerald-500/30 bg-gradient-to-r from-emerald-500/20 via-cyan-500/20 to-teal-500/20 backdrop-blur-sm animated-border">
+              <div className="relative p-8 rounded-3xl border-2 border-purple-500/30 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-rose-500/20 backdrop-blur-sm animated-border">
                 <div className="relative z-10">
-                  <p className="text-xl sm:text-2xl md:text-3xl font-light mb-8 text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                  <p className="text-xl sm:text-2xl md:text-3xl font-extralight mb-8 text-gray-300 max-w-2xl mx-auto leading-relaxed">
                     Spremni ste pokrenuti svoj brand na sljedeću razinu?
                   </p>
                   
@@ -270,15 +270,15 @@ Giveaway / aktivacije zajednice`,
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-purple-500/20 mb-6">
-                <Star className="w-4 h-4 text-emerald-400" />
-                <span className="text-sm font-medium text-emerald-400">NAŠE USLUGE</span>
+                <Star className="w-4 h-4 text-purple-400" />
+                <span className="text-sm font-light text-purple-400">NAŠE USLUGE</span>
               </div>
               
-              <h2 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-5xl md:text-6xl font-thin mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Što možemo učiniti za vas
               </h2>
               
-              <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light">
                 Spoj kreativnosti i tehnologije za brendove koji žele ostati zapamćeni
               </p>
             </div>
@@ -304,14 +304,14 @@ Giveaway / aktivacije zajednice`,
                   </div>
                   
                   <div className="p-8">
-                    <h3 className="text-2xl font-bold mb-4 group-hover:text-emerald-400 transition-colors">
+                    <h3 className="text-2xl font-light mb-4 group-hover:text-purple-400 transition-colors">
                       {service.title}
                     </h3>
                     <p className="text-gray-400 leading-relaxed">
                       {service.description}
                     </p>
                     
-                    <div className="mt-6 flex items-center text-emerald-400 font-medium">
+                    <div className="mt-6 flex items-center text-purple-400 font-light">
                       Saznaj više
                       <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </div>
@@ -327,11 +327,11 @@ Giveaway / aktivacije zajednice`,
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-blue-500/20 mb-6">
-                <Zap className="w-4 h-4 text-cyan-400" />
-                <span className="text-sm font-medium text-cyan-400">NAŠ PROIZVOD</span>
+                <Zap className="w-4 h-4 text-pink-400" />
+                <span className="text-sm font-light text-pink-400">NAŠ PROIZVOD</span>
               </div>
               
-              <h2 className="text-5xl md:text-6xl font-black mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-5xl md:text-6xl font-thin mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Naš proizvod
               </h2>
             </div>
@@ -363,15 +363,15 @@ Giveaway / aktivacije zajednice`,
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-pink-500/20 mb-6">
-                <Star className="w-4 h-4 text-teal-400" />
-                <span className="text-sm font-medium text-teal-400">PORTFELJ</span>
+                <Star className="w-4 h-4 text-rose-400" />
+                <span className="text-sm font-light text-rose-400">PORTFELJ</span>
               </div>
               
-              <h2 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-5xl md:text-6xl font-thin mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Naši projekti
               </h2>
               
-              <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light">
                 Pogledajte naše najnovije projekte i uspjehe
               </p>
             </div>
@@ -396,7 +396,7 @@ Giveaway / aktivacije zajednice`,
                   </div>
                   
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-3 group-hover:text-emerald-400 transition-colors">
+                    <h3 className="text-xl font-light mb-3 group-hover:text-purple-400 transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">
@@ -406,7 +406,7 @@ Giveaway / aktivacije zajednice`,
                       href={item.url} 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-emerald-400 hover:text-white transition-colors font-medium"
+                      className="inline-flex items-center text-purple-400 hover:text-white transition-colors font-light"
                     >
                       Pogledaj projekt
                       <ExternalLink className="ml-2 w-4 h-4" />
@@ -423,28 +423,28 @@ Giveaway / aktivacije zajednice`,
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-emerald-500/20 mb-6">
-                <Users className="w-4 h-4 text-cyan-400" />
-                <span className="text-sm font-medium text-cyan-400">O NAMA</span>
+                <Users className="w-4 h-4 text-pink-400" />
+                <span className="text-sm font-light text-pink-400">O NAMA</span>
               </div>
               
-              <h2 className="text-5xl md:text-6xl font-black mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-5xl md:text-6xl font-thin mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 O nama
               </h2>
             </div>
             
             <div className="glass-effect border border-white/10 rounded-3xl p-8 md:p-12">
               <div className="text-center mb-8">
-                <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+                <h3 className="text-3xl font-light mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   Obrt ADORES.FSH
                 </h3>
-                <p className="text-lg sm:text-xl text-gray-300">
-                  Vlasnica: <span className="text-emerald-400 font-semibold">Mia Miškulin</span>
+                <p className="text-lg sm:text-xl text-gray-300 font-light">
+                  Vlasnica: <span className="text-purple-400 font-medium">Mia Miškulin</span>
                 </p>
               </div>
               
-              <div className="bg-gradient-to-r from-emerald-900/40 to-cyan-900/40 rounded-2xl p-8 mb-8 border border-emerald-500/20">
-                <h4 className="text-lg sm:text-xl font-bold text-emerald-300 mb-6 text-center">O vlasnici</h4>
-                <div className="space-y-4 text-gray-300 leading-relaxed">
+              <div className="bg-gradient-to-r from-purple-900/40 to-pink-900/40 rounded-2xl p-8 mb-8 border border-purple-500/20">
+                <h4 className="text-lg sm:text-xl font-light text-purple-300 mb-6 text-center">O vlasnici</h4>
+                <div className="space-y-4 text-gray-300 leading-relaxed font-light">
                   <p>
                     Ja sam Mia Miškulin — MM.Mia. Influencerica, content kreatorica i osnivačica ADORES.FSH. Rođena u Vukovaru, živim u Beču, a svoju zajednicu gradim kroz autentičan sadržaj, marketing i projekte koji donose stvarne rezultate.
                   </p>
@@ -456,19 +456,19 @@ Giveaway / aktivacije zajednice`,
               
               <div className="flex items-center justify-center mb-8">
                 <div className="flex items-center space-x-3 glass-effect px-6 py-3 rounded-full border border-white/10">
-                  <Calendar className="w-5 h-5 text-cyan-400" />
-                  <span className="font-medium">Osnovan 1. srpnja 2023.</span>
+                  <Calendar className="w-5 h-5 text-pink-400" />
+                  <span className="font-light">Osnovan 1. srpnja 2023.</span>
                 </div>
               </div>
               
               <div className="text-center">
-                <h4 className="text-lg sm:text-xl font-bold text-center mb-6 text-emerald-400">MM.Mia</h4>
+                <h4 className="text-lg sm:text-xl font-light text-center mb-6 text-purple-400">MM.Mia</h4>
                 <div className="flex justify-center space-x-4">
                   <a 
                     href="https://www.instagram.com/mm.mia1/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="social-icon-large bg-gradient-to-r from-emerald-500 to-teal-500"
+                    className="social-icon-large bg-gradient-to-r from-purple-500 to-pink-500"
                   >
                     <Instagram className="w-6 h-6" />
                   </a>
@@ -476,7 +476,7 @@ Giveaway / aktivacije zajednice`,
                     href="https://www.facebook.com/mm.miablogger" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="social-icon-large bg-gradient-to-r from-cyan-500 to-blue-500"
+                    className="social-icon-large bg-gradient-to-r from-pink-500 to-rose-500"
                   >
                     <Facebook className="w-6 h-6" />
                   </a>
@@ -484,7 +484,7 @@ Giveaway / aktivacije zajednice`,
                     href="https://www.tiktok.com/@_mm.mia" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="social-icon-large bg-gradient-to-r from-teal-500 to-emerald-500"
+                    className="social-icon-large bg-gradient-to-r from-rose-500 to-purple-500"
                   >
                     <div className="w-6 h-6 font-bold text-sm flex items-center justify-center">
                       TT
@@ -501,17 +501,17 @@ Giveaway / aktivacije zajednice`,
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-16">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-blue-500/20 mb-6">
-                <Mail className="w-4 h-4 text-cyan-400" />
-                <span className="text-sm font-medium text-cyan-400">KONTAKT</span>
+                <Mail className="w-4 h-4 text-pink-400" />
+                <span className="text-sm font-light text-pink-400">KONTAKT</span>
               </div>
               
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-thin mb-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Kontaktirajte nas
               </h2>
             </div>
             
             <div className="glass-effect border border-white/10 rounded-3xl p-8 md:p-12">
-              <p className="text-lg sm:text-xl md:text-2xl font-light mb-12 text-gray-300 leading-relaxed">
+              <p className="text-lg sm:text-xl md:text-2xl font-extralight mb-12 text-gray-300 leading-relaxed">
                 Spremni ste pokrenuti svoj brand na sljedeću razinu?
               </p>
               
@@ -531,12 +531,12 @@ Giveaway / aktivacije zajednice`,
       {/* Footer */}
       <footer className="relative border-t border-white/10 py-12 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="text-3xl font-bold mb-6 bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+          <div className="text-3xl font-light mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             ADORES.FSH
           </div>
           
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <MapPin className="w-5 h-5 text-emerald-400" />
+            <MapPin className="w-5 h-5 text-purple-400" />
             <span className="text-gray-400">Dr. Franje Tuđmana 27A, Ilok, 32236, Hrvatska</span>
           </div>
           
