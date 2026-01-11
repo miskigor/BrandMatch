@@ -239,8 +239,7 @@ Giveaway / aktivacije zajednice`,
             </p>
             
             <div className="text-center">
-              <div className="relative p-8 rounded-3xl border-2 border-transparent bg-gradient-to-r from-emerald-500/20 via-cyan-500/20 to-teal-500/20 animate-gradient-x backdrop-blur-sm">
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-emerald-500 via-cyan-500 to-teal-500 opacity-30 animate-gradient-x"></div>
+              <div className="relative p-8 rounded-3xl border-2 border-emerald-500/30 bg-gradient-to-r from-emerald-500/20 via-cyan-500/20 to-teal-500/20 backdrop-blur-sm animated-border">
                 <div className="relative z-10">
                   <p className="text-xl sm:text-2xl md:text-3xl font-light mb-8 text-gray-300 max-w-2xl mx-auto leading-relaxed">
                     Spremni ste pokrenuti svoj brand na sljedeću razinu?
