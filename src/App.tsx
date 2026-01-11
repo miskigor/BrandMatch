@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Instagram, Facebook, Menu, Star, Sparkles, Zap } from 'lucide-react';
+import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Instagram, Facebook, Menu, Sparkles, Zap } from 'lucide-react';
 
 function App() {
   const [selectedService, setSelectedService] = React.useState<number | null>(null);
@@ -349,16 +349,11 @@ Giveaway / aktivacije zajednice`,
         {/* Portfolio Section */}
         <section id="portfolio" className="py-24 px-6 relative">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-20">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-pink-500/20 mb-6">
-                <Star className="w-4 h-4 text-purple-400" />
-                <span className="text-sm font-light text-purple-400">PORTFELJ</span>
-              </div>
-              
+            <div className="text-center mb-12">
               <h2 className="text-5xl md:text-6xl font-thin mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Naši projekti
               </h2>
-              
+
               <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light">
                 Pogledajte naše najnovije projekte i uspjehe
               </p>
