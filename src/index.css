@@ -10,16 +10,49 @@
   letter-spacing: 0.025em;
 }
 
-/* Glass morphism effect */
+/* Glass morphism effect - Porcelain style */
 .glass-effect {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(200, 200, 220, 0.2),
+              inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+/* Porcelain shine effect */
+.porcelain-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.porcelain-shine::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 70%
+  );
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
 }
 
 /* Navigation styles */
 .nav-link {
-  @apply text-white/80 hover:text-white transition-all duration-300 relative font-medium;
+  @apply text-gray-700 hover:text-gray-900 transition-all duration-300 relative font-medium;
 }
 
 .nav-link::after {
@@ -39,20 +72,23 @@
 
 /* Button styles */
 .btn-primary {
-  @apply px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25 inline-flex items-center;
+  @apply px-8 py-4 bg-gradient-to-r from-blue-100 to-purple-100 hover:from-blue-200 hover:to-purple-200 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-gray-800 inline-flex items-center;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3),
+              inset 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .btn-secondary {
-  @apply px-8 py-4 glass-effect border border-white/20 hover:border-purple-500/50 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-white hover:text-purple-300;
+  @apply px-8 py-4 glass-effect border border-gray-200 hover:border-purple-300 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-gray-700 hover:text-purple-600;
 }
 
 /* Social icon styles */
 .social-icon {
-  @apply p-3 glass-effect border border-white/10 hover:border-purple-500/30 rounded-full transition-all duration-300 transform hover:scale-110;
+  @apply p-3 glass-effect border border-gray-200 hover:border-purple-300 rounded-full transition-all duration-300 transform hover:scale-110 text-gray-700;
 }
 
 .social-icon-large {
-  @apply p-4 rounded-full transition-all duration-300 transform hover:scale-110 hover:shadow-lg text-white;
+  @apply p-4 rounded-full transition-all duration-300 transform hover:scale-110 text-white;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
 }
 
 /* Service card animation */
@@ -76,16 +112,17 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(240, 240, 250, 0.5);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #a855f7, #3b82f6);
+  background: linear-gradient(to bottom, #ddd6fe, #bfdbfe);
   border-radius: 4px;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #9333ea, #2563eb);
+  background: linear-gradient(to bottom, #c4b5fd, #93c5fd);
 }
 
 /* Smooth scrolling */
@@ -204,16 +241,12 @@ img {
 /* Fallback for browsers without backdrop-filter */
 @supports not (backdrop-filter: blur(20px)) {
   .glass-effect {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.9);
   }
 }
 
-/* Smooth hover brightness effect for interactive elements */
-a, button, .service-card, .portfolio-card, .glass-effect {
-  transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-a:hover, button:hover, .service-card:hover, .portfolio-card:hover, .glass-effect:hover {
-  filter: brightness(1.15);
+/* Smooth hover effect for interactive elements */
+a, button, .service-card, .portfolio-card {
+  transition: all 0.3s ease;
 }
 
