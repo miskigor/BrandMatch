@@ -201,10 +201,10 @@ Giveaway / aktivacije zajednice`,
             <img
               src="/andras-vas-Bd7gNnWJBkU-unsplash copy copy copy copy copy.jpg"
               alt="Profesionalni marketing tim BrandMatch agencije"
-              className="w-full h-full object-cover opacity-20"
+              className="w-full h-full object-cover object-left"
               loading="eager"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-blue-50/95 to-purple-50/95"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/80 to-white"></div>
           </div>
 
           <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
