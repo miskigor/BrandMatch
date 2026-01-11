@@ -523,7 +523,7 @@ Naš cilj je jednostavan: pretvoriti ideje u funkcionalne digitalne proizvode ko
       </main>
 
       {/* Footer */}
-      <footer className="relative border-t border-gray-200 py-12 px-6 bg-white/50">
+      <footer className="relative border-t border-purple-200 py-12 px-6 bg-gradient-to-r from-blue-100 to-purple-100">
         <div className="max-w-7xl mx-auto text-center">
           <div className="text-3xl font-light mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             ADORES.FSH
@@ -531,10 +531,10 @@ Naš cilj je jednostavan: pretvoriti ideje u funkcionalne digitalne proizvode ko
 
           <div className="flex items-center justify-center space-x-3 mb-6">
             <MapPin className="w-5 h-5 text-purple-600" />
-            <span className="text-gray-600">Dr. Franje Tuđmana 27A, Ilok, 32236, Hrvatska</span>
+            <span className="text-gray-700">Dr. Franje Tuđmana 27A, Ilok, 32236, Hrvatska</span>
           </div>
 
-          <p className="text-gray-500">
+          <p className="text-gray-600">
             © 2024 ADORES.FSH. Sva prava pridržana.
           </p>
         </div>
