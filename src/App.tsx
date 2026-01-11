@@ -254,11 +254,6 @@ Giveaway / aktivacije zajednice`,
         <section id="services" className="py-24 px-6 relative">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect border border-orange-500/20 mb-6">
-                <Star className="w-4 h-4 text-purple-400" />
-                <span className="text-sm font-light text-purple-400">NAŠE USLUGE</span>
-              </div>
-              
               <h2 className="text-5xl md:text-6xl font-thin mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 Što možemo učiniti za vas
               </h2>
