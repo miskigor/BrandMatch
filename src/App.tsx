@@ -380,7 +380,7 @@ Giveaway / aktivacije zajednice`,
                   </div>
                   
                   <div className="p-6">
-                    <h3 className="text-xl font-light mb-3 group-hover:text-orange-400 transition-colors">
+                    <h3 className="text-xl font-light mb-3 group-hover:text-purple-400 transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">
