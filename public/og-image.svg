@@ -1,0 +1,33 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1000" cy="100" r="200" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="200" cy="530" r="150" fill="rgba(255,255,255,0.1)"/>
+
+  <!-- Content box -->
+  <rect x="150" y="150" width="900" height="330" rx="20" fill="rgba(255,255,255,0.95)" filter="drop-shadow(0px 20px 40px rgba(0,0,0,0.3))"/>
+
+  <!-- Logo -->
+  <text x="600" y="270" font-family="Inter, Arial, sans-serif" font-size="80" font-weight="200" text-anchor="middle" fill="url(#textGradient)" letter-spacing="2">BrandMatch</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="340" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="300" text-anchor="middle" fill="#4a5568">Marketing agencija za društvene mreže,</text>
+  <text x="600" y="375" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="300" text-anchor="middle" fill="#4a5568">web stranice i mobilne aplikacije</text>
+
+  <!-- Tagline -->
+  <text x="600" y="430" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="300" text-anchor="middle" fill="#718096">Kod pretvaramo u <tspan fill="#764ba2" font-weight="500">uspjeh</tspan></text>
+</svg>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generiraj OG Sliku - BrandMatch</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f7fafc;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .instructions {
+            max-width: 800px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .instructions h1 {
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .instructions p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .instructions ol {
+            color: #4a5568;
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        .instructions code {
+            background: #f7fafc;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #764ba2;
+            font-family: 'Courier New', monospace;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 500;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        #canvas-container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        #ogCanvas {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h1>🎨 Generator Naslovne Slike</h1>
+        <p>Ova stranica automatski generiše optimalnu naslovu sliku za deljenje na društvenim mrežama (Open Graph slika).</p>
+        <ol>
+            <li>Slika će se automatski generisati ispod</li>
+            <li>Klikni na dugme "Preuzmi OG Sliku" da sačuvaš sliku</li>
+            <li>Sačuvaj sliku kao <code>og-image.png</code> u <code>public</code> folderu</li>
+            <li>Ažuriraj <code>index.html</code> da koristi <code>og-image.png</code> umesto <code>og-image.svg</code></li>
+        </ol>
+        <br>
+        <button class="download-btn" onclick="downloadImage()">📥 Preuzmi OG Sliku (1200x630)</button>
+    </div>
+
+    <div id="canvas-container">
+        <canvas id="ogCanvas" width="1200" height="630"></canvas>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('ogCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function drawOGImage() {
+            // Create gradient background
+            const bgGradient = ctx.createLinearGradient(0, 0, 1200, 630);
+            bgGradient.addColorStop(0, '#667eea');
+            bgGradient.addColorStop(0.5, '#764ba2');
+            bgGradient.addColorStop(1, '#f093fb');
+            ctx.fillStyle = bgGradient;
+            ctx.fillRect(0, 0, 1200, 630);
+
+            // Draw decorative circles
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.beginPath();
+            ctx.arc(1000, 100, 200, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(200, 530, 150, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Draw white content box with shadow
+            ctx.shadowColor = 'rgba(0, 0, 0, 0.3)';
+            ctx.shadowBlur = 40;
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 20;
+
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.95)';
+            roundRect(ctx, 150, 150, 900, 330, 20);
+            ctx.fill();
+
+            // Reset shadow
+            ctx.shadowColor = 'transparent';
+            ctx.shadowBlur = 0;
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 0;
+
+            // Draw logo with gradient
+            const logoGradient = ctx.createLinearGradient(300, 0, 900, 0);
+            logoGradient.addColorStop(0, '#667eea');
+            logoGradient.addColorStop(1, '#764ba2');
+
+            ctx.fillStyle = logoGradient;
+            ctx.font = '200 80px Inter, -apple-system, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.letterSpacing = '2px';
+            ctx.fillText('BrandMatch', 600, 250);
+
+            // Draw subtitle
+            ctx.fillStyle = '#4a5568';
+            ctx.font = '300 28px Inter, -apple-system, sans-serif';
+            ctx.fillText('Marketing agencija za društvene mreže,', 600, 320);
+            ctx.fillText('web stranice i mobilne aplikacije', 600, 355);
+
+            // Draw tagline
+            ctx.fillStyle = '#718096';
+            ctx.font = '300 24px Inter, -apple-system, sans-serif';
+            ctx.fillText('Kod pretvaramo u ', 500, 410);
+
+            ctx.fillStyle = '#764ba2';
+            ctx.font = '500 24px Inter, -apple-system, sans-serif';
+            ctx.fillText('uspjeh', 670, 410);
+        }
+
+        function roundRect(ctx, x, y, width, height, radius) {
+            ctx.beginPath();
+            ctx.moveTo(x + radius, y);
+            ctx.lineTo(x + width - radius, y);
+            ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+            ctx.lineTo(x + width, y + height - radius);
+            ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+            ctx.lineTo(x + radius, y + height);
+            ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+            ctx.lineTo(x, y + radius);
+            ctx.quadraticCurveTo(x, y, x + radius, y);
+            ctx.closePath();
+        }
+
+        function downloadImage() {
+            canvas.toBlob(function(blob) {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'og-image.png';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+
+                alert('✅ Slika je preuzeta! Sačuvaj je u /public folderu kao og-image.png');
+            }, 'image/png', 1.0);
+        }
+
+        // Draw the image when page loads
+        drawOGImage();
+    </script>
+</body>
+</html>

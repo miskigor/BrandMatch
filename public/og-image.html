@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG Image Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        .og-container {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .og-container::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -250px;
+            right: -250px;
+        }
+        .og-container::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            bottom: -200px;
+            left: -200px;
+        }
+        .og-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 60px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+        }
+        .logo {
+            font-size: 72px;
+            font-weight: 200;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        .subtitle {
+            font-size: 32px;
+            color: #4a5568;
+            font-weight: 300;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+        .tagline {
+            font-size: 24px;
+            color: #718096;
+            font-weight: 300;
+        }
+        .accent {
+            color: #764ba2;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="og-container">
+        <div class="og-content">
+            <div class="logo">BrandMatch</div>
+            <div class="subtitle">Marketing agencija za društvene mreže,<br>web stranice i mobilne aplikacije</div>
+            <div class="tagline">Kod pretvaramo u <span class="accent">uspjeh</span></div>
+        </div>
+    </div>
+
+    <script>
+        // Instructions for screenshot:
+        // 1. Open this file in browser
+        // 2. Take screenshot at exact 1200x630px
+        // 3. Save as og-image.jpg in public folder
+        console.log('Open this page and take a screenshot at 1200x630px');
+    </script>
+</body>
+</html>
