@@ -204,7 +204,7 @@ Giveaway / aktivacije zajednice`,
               className="w-full h-full object-cover"
               loading="eager"
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-blue-900/60 to-indigo-900/80"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-900/90 via-blue-900/50 to-transparent"></div>
           </div>
           
           <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
