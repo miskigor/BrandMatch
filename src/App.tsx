@@ -239,18 +239,23 @@ Giveaway / aktivacije zajednice`,
             </p>
             
             <div className="text-center">
-              <div className="animated-border-box border-2">
-                Spremni ste pokrenuti svoj brand na sljedeću razinu?
-              </p>
-              
-              <a 
-                href="mailto:info@adoresfsh.com?subject=Upit za suradnju&body=Pozdrav,%0D%0A%0D%0AŽelim saznati više o vašim uslugama.%0D%0A%0D%0ASrdačan pozdrav"
-                className="btn-primary group inline-flex items-center"
-              >
-                <Mail className="mr-3 w-6 h-6" />
-                Pošalji upit
-                <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
-              </a>
+              <div className="relative p-8 rounded-3xl border-2 border-transparent bg-gradient-to-r from-emerald-500/20 via-cyan-500/20 to-teal-500/20 animate-gradient-x backdrop-blur-sm">
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-emerald-500 via-cyan-500 to-teal-500 opacity-30 animate-gradient-x"></div>
+                <div className="relative z-10">
+                  <p className="text-xl sm:text-2xl md:text-3xl font-light mb-8 text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    Spremni ste pokrenuti svoj brand na sljedeću razinu?
+                  </p>
+                  
+                  <a 
+                    href="mailto:info@adoresfsh.com?subject=Upit za suradnju&body=Pozdrav,%0D%0A%0D%0AŽelim saznati više o vašim uslugama.%0D%0A%0D%0ASrdačan pozdrav"
+                    className="btn-primary group inline-flex items-center"
+                  >
+                    <Mail className="mr-3 w-6 h-6" />
+                    Pošalji upit
+                    <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           
