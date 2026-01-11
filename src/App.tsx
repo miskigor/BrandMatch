@@ -350,11 +350,11 @@ Giveaway / aktivacije zajednice`,
         <section id="portfolio" className="py-24 px-6 relative">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-5xl md:text-6xl font-thin mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <h2 className="text-5xl md:text-6xl font-thin mb-6 text-white">
                 Naši projekti
               </h2>
 
-              <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light">
+              <p className="text-xl text-gray-200 max-w-2xl mx-auto font-light">
                 Pogledajte naše najnovije projekte i uspjehe
               </p>
             </div>
