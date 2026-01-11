@@ -211,7 +211,7 @@ Giveaway / aktivacije zajednice`,
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black mb-6 leading-tight">
               <span
                 className="block bg-gradient-to-r from-purple-400 via-blue-400 to-pink-400 bg-clip-text text-transparent animate-gradient font-extralight"
-                style={{ WebkitTextStroke: '2px white', paintOrder: 'stroke fill' }}
+                style={{ WebkitTextStroke: '0.5px white', paintOrder: 'stroke fill' }}
               >
                 BrandMatch
               </span>
