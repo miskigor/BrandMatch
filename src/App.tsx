@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Instagram, Facebook, Menu, Sparkles, Zap } from 'lucide-react';
+import { ArrowRight, Users, Share2, Globe, Smartphone, Mail, MapPin, Calendar, X, ExternalLink, Instagram, Facebook, Menu, Sparkles, Zap } from 'lucide-react';
 
 function App() {
   const [selectedService, setSelectedService] = React.useState<number | null>(null);
